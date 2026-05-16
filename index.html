@@ -11,17 +11,17 @@ title: Aodun Gaowa | Portfolio
     
     <!-- Language Switcher -->
     <div class="fixed top-0 right-0 p-4 md:p-8 z-50 flex gap-2">
-        <a href="{{ '/?lang=en' | relative_url }}"
+        <a href="{{ '?lang=en' | relative_url }}"
            class="px-3 py-1 text-xs font-mono uppercase tracking-widest {% if lang == 'en' %}bg-[#1A1A1A] text-white{% else %}opacity-40 hover:opacity-60{% endif %} rounded transition">
             EN
         </a>
-
-        <a href="{{ '/?lang=de' | relative_url }}"
+    
+        <a href="{{ '?lang=de' | relative_url }}"
            class="px-3 py-1 text-xs font-mono uppercase tracking-widest {% if lang == 'de' %}bg-[#1A1A1A] text-white{% else %}opacity-40 hover:opacity-60{% endif %} rounded transition">
             DE
         </a>
-
-        <a href="{{ '/?lang=zh' | relative_url }}"
+    
+        <a href="{{ '?lang=zh' | relative_url }}"
            class="px-3 py-1 text-xs font-mono uppercase tracking-widest {% if lang == 'zh' %}bg-[#1A1A1A] text-white{% else %}opacity-40 hover:opacity-60{% endif %} rounded transition">
             中文
         </a>
@@ -35,7 +35,7 @@ title: Aodun Gaowa | Portfolio
             <!-- Profile Photo -->
             <div class="flex justify-center mb-8">
                 <img
-                    src="{{ '/assets/images/Bewerbungsfoto.jpeg' | relative_url }}"
+                    src="{{ site.baseurl }}/assets/images/Bewerbungsfoto.jpeg"
                     alt="Aodun Gaowa"
                     class="w-48 h-48 rounded-2xl object-cover shadow-lg"
                 >
