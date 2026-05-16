@@ -4,8 +4,17 @@ title: Aodun Gaowa | Portfolio
 ---
 
 {% assign resume = site.data.resume %}
+{% assign lang = page.lang | default: 'en' %}
+{% assign content = resume.languages[lang] %}
 
 <div class="flex flex-col md:flex-row min-h-screen">
+    <!-- Language Switcher -->
+    <div class="fixed top-0 right-0 p-4 md:p-8 z-50 flex gap-2">
+        <a href="/aodun_gaowa/?lang=en" class="px-3 py-1 text-xs font-mono uppercase tracking-widest {% if lang == 'en' %}bg-[#1A1A1A] text-white{% else %}opacity-40 hover:opacity-60{% endif %} rounded transition">EN</a>
+        <a href="/aodun_gaowa/?lang=de" class="px-3 py-1 text-xs font-mono uppercase tracking-widest {% if lang == 'de' %}bg-[#1A1A1A] text-white{% else %}opacity-40 hover:opacity-60{% endif %} rounded transition">DE</a>
+        <a href="/aodun_gaowa/?lang=zh" class="px-3 py-1 text-xs font-mono uppercase tracking-widest {% if lang == 'zh' %}bg-[#1A1A1A] text-white{% else %}opacity-40 hover:opacity-60{% endif %} rounded transition">中文</a>
+    </div>
+
     <!-- Sidebar -->
     <aside class="w-full md:w-80 border-b md:border-b-0 md:border-r border-[#1A1A1A]/5 p-8 md:p-12 flex flex-col justify-between">
         <div class="space-y-16">
@@ -15,36 +24,36 @@ title: Aodun Gaowa | Portfolio
             </div>
 
             <div class="flex flex-col space-y-4">
-                <span class="font-mono font-bold text-sm tracking-tighter uppercase">Profile.Core</span>
+                <span class="font-mono font-bold text-sm tracking-tighter uppercase">{{ content.ui.profile_core }}</span>
                 <div class="space-y-6">
                     <!-- Title Section -->
                     <section>
-                        <h3 class="text-lg font-bold font-serif italic mb-2">{{ resume.role }}</h3>
-                        <p class="text-xs opacity-60 font-mono">{{ resume.contact.location }}</p>
+                        <h3 class="text-lg font-bold font-serif italic mb-2">{{ content.role }}</h3>
+                        <p class="text-xs opacity-60 font-mono">{{ content.contact.location }}</p>
                     </section>
 
                     <section>
-                        <h4 class="text-[10px] uppercase tracking-[0.2em] font-bold opacity-40 mb-3">Essentials</h4>
+                        <h4 class="text-[10px] uppercase tracking-[0.2em] font-bold opacity-40 mb-3">{{ content.ui.essentials }}</h4>
                         <ul class="space-y-3 font-mono text-[11px]">
-                            <li class="flex justify-between"><span>Born</span> <span class="opacity-50 italic">{{ resume.contact.born }}</span></li>
-                            <li class="flex justify-between"><span>Nationality</span> <span class="opacity-50 italic">{{ resume.contact.nationality }}</span></li>
-                            <li class="flex justify-between"><span>Status</span> <span class="opacity-50 italic">{{ resume.contact.status }}</span></li>
+                            <li class="flex justify-between"><span>{{ content.ui.born }}</span> <span class="opacity-50 italic">{{ content.contact.born }}</span></li>
+                            <li class="flex justify-between"><span>{{ content.ui.nationality }}</span> <span class="opacity-50 italic">{{ content.contact.nationality }}</span></li>
+                            <li class="flex justify-between"><span>{{ content.ui.status }}</span> <span class="opacity-50 italic">{{ content.contact.status }}</span></li>
                         </ul>
                     </section>
                     
                     <section>
-                        <h4 class="text-[10px] uppercase tracking-[0.2em] font-bold opacity-40 mb-3">Connect</h4>
+                        <h4 class="text-[10px] uppercase tracking-[0.2em] font-bold opacity-40 mb-3">{{ content.ui.connect }}</h4>
                         <div class="space-y-2 text-xs font-mono">
-                            <p class="truncate"><a href="mailto:{{ resume.contact.email }}" class="hover:opacity-60">{{ resume.contact.email }}</a></p>
-                            <p>{{ resume.contact.phone }}</p>
+                            <p class="truncate"><a href="mailto:{{ content.contact.email }}" class="hover:opacity-60">{{ content.contact.email }}</a></p>
+                            <p>{{ content.contact.phone }}</p>
                         </div>
                     </section>
                 </div>
             </div>
 
             <div class="p-6 bg-[#1A1A1A] rounded-2xl text-white">
-                <p class="text-[10px] uppercase tracking-widest font-bold mb-2 opacity-50">Current Role</p>
-                <p class="text-xs font-mono">{{ resume.role }}</p>
+                <p class="text-[10px] uppercase tracking-widest font-bold mb-2 opacity-50">{{ content.ui.current_role }}</p>
+                <p class="text-xs font-mono">{{ content.role }}</p>
             </div>
         </div>
     </aside>
@@ -57,7 +66,13 @@ title: Aodun Gaowa | Portfolio
                 <span class="italic opacity-20">{{ resume.name | split: ' ' | last }}.</span>
             </h1>
             <p class="text-2xl md:text-3xl font-light leading-snug tracking-tight max-w-xl opacity-80 text-[#1A1A1A]">
-                A strategic leader in <span class="font-serif italic font-medium uppercase text-lg tracking-widest bg-[#1A1A1A] text-white px-2 py-1 mx-1 rounded-sm">Business Development</span> specializing in China-Germany partnerships
+                {% if lang == 'en' %}
+                    A strategic leader in <span class="font-serif italic font-medium uppercase text-lg tracking-widest bg-[#1A1A1A] text-white px-2 py-1 mx-1 rounded-sm">Business Development</span> specializing in China-Germany partnerships
+                {% elsif lang == 'de' %}
+                    Ein strategischer Führungskopf im <span class="font-serif italic font-medium uppercase text-lg tracking-widest bg-[#1A1A1A] text-white px-2 py-1 mx-1 rounded-sm">Business Development</span> mit Spezialgebiet China-Deutschland Partnerschaften
+                {% elsif lang == 'zh' %}
+                    一位<span class="font-serif italic font-medium uppercase text-lg tracking-widest bg-[#1A1A1A] text-white px-2 py-1 mx-1 rounded-sm">商业发展</span>领域的战略领袖，专门从事中德合作
+                {% endif %}
             </p>
         </header>
 
@@ -65,43 +80,51 @@ title: Aodun Gaowa | Portfolio
             <!-- Service Scope -->
             <section>
                 <div class="relative mb-12">
-                    <h2 class="text-[10px] font-bold uppercase tracking-[0.3em] opacity-40 mb-2">Service Scope</h2>
+                    <h2 class="text-[10px] font-bold uppercase tracking-[0.3em] opacity-40 mb-2">{{ content.ui.service_scope }}</h2>
                     <div class="h-[2px] w-full bg-[#1A1A1A]"></div>
                 </div>
                 
                 <div class="mb-12">
-                    <h3 class="text-sm font-mono uppercase tracking-widest font-bold mb-6 opacity-60">Leistungsprofil</h3>
-                    <p class="text-xs font-mono opacity-50 mb-8">China & Deutschland · Beschaffung · Markteintritt · Industrie</p>
+                    <h3 class="text-sm font-mono uppercase tracking-widest font-bold mb-6 opacity-60">{{ content.ui.performance_profile }}</h3>
+                    <p class="text-xs font-mono opacity-50 mb-8">
+                        {% if lang == 'en' %}
+                            China & Germany · Procurement · Market Entry · Industry
+                        {% elsif lang == 'de' %}
+                            China & Deutschland · Beschaffung · Markteintritt · Industrie
+                        {% elsif lang == 'zh' %}
+                            中国和德国 · 采购 · 市场进入 · 工业
+                        {% endif %}
+                    </p>
                     
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
-                        <!-- Markterschließung -->
+                        <!-- Market Development -->
                         <div class="border-l-2 border-[#1A1A1A]/20 pl-6">
-                            <h4 class="text-lg font-serif italic mb-3">Markterschließung</h4>
-                            <p class="text-sm opacity-70 leading-relaxed">Strategische Marktanalyse und Eintrittsplanung für chinesische Unternehmen im deutschen und europäischen Markt</p>
+                            <h4 class="text-lg font-serif italic mb-3">{{ content.ui.market_development }}</h4>
+                            <p class="text-sm opacity-70 leading-relaxed">{{ content.ui.market_development_desc }}</p>
                         </div>
                         
-                        <!-- Kundengewinnung -->
+                        <!-- Customer Acquisition -->
                         <div class="border-l-2 border-[#1A1A1A]/20 pl-6">
-                            <h4 class="text-lg font-serif italic mb-3">Kundengewinnung</h4>
-                            <p class="text-sm opacity-70 leading-relaxed">Identifikation und Ansprache potenzieller Kunden, Lieferanten und Geschäftspartner in der DACH-Region</p>
+                            <h4 class="text-lg font-serif italic mb-3">{{ content.ui.customer_acquisition }}</h4>
+                            <p class="text-sm opacity-70 leading-relaxed">{{ content.ui.customer_acquisition_desc }}</p>
                         </div>
                         
-                        <!-- Geschäftsanbahnung -->
+                        <!-- Business Initiation -->
                         <div class="border-l-2 border-[#1A1A1A]/20 pl-6">
-                            <h4 class="text-lg font-serif italic mb-3">Geschäftsanbahnung</h4>
-                            <p class="text-sm opacity-70 leading-relaxed">Professionelle Begleitung der Geschäftsanbahnung</p>
+                            <h4 class="text-lg font-serif italic mb-3">{{ content.ui.business_initiation }}</h4>
+                            <p class="text-sm opacity-70 leading-relaxed">{{ content.ui.business_initiation_desc }}</p>
                         </div>
                         
-                        <!-- Industriefokus -->
+                        <!-- Industry Focus -->
                         <div class="border-l-2 border-[#1A1A1A]/20 pl-6">
-                            <h4 class="text-lg font-serif italic mb-3">Industriefokus</h4>
-                            <p class="text-sm opacity-70 leading-relaxed">Maschinenbau, Automotive und industrielle Fertigung</p>
+                            <h4 class="text-lg font-serif italic mb-3">{{ content.ui.industry_focus }}</h4>
+                            <p class="text-sm opacity-70 leading-relaxed">{{ content.ui.industry_focus_desc }}</p>
                         </div>
                     </div>
                     
                     <div class="p-8 bg-[#1A1A1A]/5 rounded-lg border border-[#1A1A1A]/10">
                         <p class="text-sm italic text-[#1A1A1A] leading-relaxed">
-                            Ihr Partner für nachhaltige Geschäftsentwicklung zwischen China und Deutschland
+                            {{ content.ui.tagline }}
                         </p>
                     </div>
                 </div>
@@ -110,12 +133,12 @@ title: Aodun Gaowa | Portfolio
             <!-- Experience -->
             <section>
                 <div class="relative mb-12">
-                    <h2 class="text-[10px] font-bold uppercase tracking-[0.3em] opacity-40 mb-2">Professional Lineup</h2>
+                    <h2 class="text-[10px] font-bold uppercase tracking-[0.3em] opacity-40 mb-2">{{ content.ui.professional_lineup }}</h2>
                     <div class="h-[2px] w-full bg-[#1A1A1A]"></div>
                 </div>
                 
                 <div class="space-y-24">
-                    {% for job in resume.experience %}
+                    {% for job in content.experience %}
                     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 text-[#1A1A1A]">
                         <div class="lg:col-span-4">
                             <span class="font-mono text-xs font-bold opacity-30 uppercase tracking-[0.2em] mb-2 block">{{ job.period }}</span>
@@ -143,11 +166,11 @@ title: Aodun Gaowa | Portfolio
             <!-- Education -->
             <section>
                 <div class="relative mb-12">
-                    <h2 class="text-[10px] font-bold uppercase tracking-[0.3em] opacity-40 mb-2">Education Paths</h2>
+                    <h2 class="text-[10px] font-bold uppercase tracking-[0.3em] opacity-40 mb-2">{{ content.ui.education_paths }}</h2>
                     <div class="h-[2px] w-full bg-[#1A1A1A]"></div>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-[#1A1A1A]">
-                    {% for edu in resume.education %}
+                    {% for edu in content.education %}
                     <div class="space-y-2">
                         <span class="font-mono text-xs opacity-30">{{ edu.period }}</span>
                         <h4 class="text-xl font-serif italic">{{ edu.degree }}</h4>
@@ -172,3 +195,12 @@ title: Aodun Gaowa | Portfolio
         </div>
     </main>
 </div>
+
+<script>
+// Language switching with URL parameter
+document.addEventListener('DOMContentLoaded', function() {
+    const params = new URLSearchParams(window.location.search);
+    const lang = params.get('lang') || 'en';
+    localStorage.setItem('preferredLanguage', lang);
+});
+</script>
