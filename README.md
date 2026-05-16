@@ -2,6 +2,20 @@
 <img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
 </div>
 
+# Aodun Gaowa
+
+## BUSINESS DEVELOPMENT MANAGER
+
+**Location:** München, Bayern, Deutschland  
+**Phone:** +49 (0)152 3390 3259  
+**Email:** a.gaowa@gp-iconsulting.de  
+
+**Birthplace:** Innere Mongolei, China  
+**Nationality:** Deutsch  
+**Family Status:** Verheiratet, 1 Kind  
+
+---
+
 # Run and deploy your AI Studio app
 
 This contains everything you need to run your app locally.
