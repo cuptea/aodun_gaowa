@@ -1,0 +1,103 @@
+name: Aodun Gaowa
+role: Business Development Manager
+contact:
+  phone: "+49 (0)152 3390 3259"
+  email: "a.gaowa@gp-iconsulting.de"
+  location: "Munich, Germany"
+  nationality: "German"
+  born: "Inner Mongolia, China"
+  status: "Married, 1 child"
+
+experience:
+  - company: "Self-employed"
+    role: "Business Development Manager"
+    period: "01/2026 - Present"
+    location: "Munich"
+    tasks:
+      - "Consulting for German-Chinese automotive and manufacturing projects with a focus on Business Development and Project Management."
+  
+  - company: "BMW AG"
+    role: "Commercial Project Management Assembly"
+    period: "06/2023 - 12/2025"
+    location: "Munich"
+    project: "5er, 7er, ALPINA and M-Derivatives"
+    tasks:
+      - "Commercial management of all project phases: manufacturing costs, investment, and budget."
+      - "Agreement on project goals, evaluation of sync points, confirmation of concepts and products."
+      - "Controlling and consolidation of evaluation orders (technical changes etc.) according to target agreement."
+  
+  - company: "BMW AG"
+    role: "Business Management Software Development"
+    period: "10/2022 - 06/2023"
+    location: "Munich"
+    project: "Autonomous Driving"
+    tasks:
+      - "Planning and controlling the budget for the entire main department."
+      - "Organizing and performing evaluation orders and consolidating evaluation results."
+
+  - company: "MINTH GmbH"
+    role: "Project Manager"
+    period: "04/2019 - 10/2022"
+    location: "Munich, China, Serbia, Austria"
+    project: "High-voltage battery housing BEV (BMW iX1 housing base)"
+    tasks:
+      - "Industrialization of a new production line in Serbia (Greenfield project), ensuring quality, schedule, and costs."
+      - "Schnittstelle between the internal global team, BMW, and European suppliers: FFT, HAGE, MDS, TRICO."
+
+  - company: "BMW AG"
+    role: "Project Control"
+    period: "10/2015 - 03/2019"
+    location: "Munich"
+    tasks:
+      - "Monitoring OEM project status and risk management."
+      - "Consolidating high-risk topics for management decisions."
+      - "Integrating BEST PRACTICE platform concepts for problem-solving and Lessons Learned."
+
+  - company: "China"
+    role: "Industrialization Engineer"
+    period: "01/2014 - 09/2015"
+    tasks:
+      - "Industrialization of new Eloxal production lines in an international team."
+      - "Process planning, supplier procurement, personnel planning, HW/SW implementation."
+      - "Team member of the BMW Supplier Innovation Award 2016 for corrosion resistance."
+
+  - company: "BMW AG"
+    role: "Project Coordinator"
+    period: "08/2012 - 12/2013"
+    location: "Unterschleißheim/Munich"
+    project: "Relocation project BMW 3-series (Supplier change after SOP)"
+    tasks:
+      - "Communication management in multicultural teams and maintaining efficient teamwork."
+      - "Conducting intercultural communication training."
+
+education:
+  - degree: "Master, Systems Engineering"
+    period: "03/2008 - 03/2012"
+    school: "Hochschule für angewandte Wissenschaften München"
+    focus: "Project Management, Process Planning and Management"
+    
+  - degree: "Informatics (Vordiplom)"
+    period: "04/2005 - 02/2008"
+    school: "Technical University of Munich"
+
+skills:
+  soft:
+    - "Analytical and conceptual thinking"
+    - "Structuring and solving complex questions"
+    - "Familiarity in intercultural work environments"
+    - "Strong communication skills"
+  hard:
+    - "Agile and classic project management: very good"
+    - "SAFe (Scaled Agile Framework) Product Owner Product Manager"
+    - "SAP: very good"
+    - "MS Office (Outlook, Teams, Excel, OneNote, PowerPoint, Word)"
+
+languages:
+  - name: "German"
+    level: "Negotiation-proof"
+  - name: "English"
+    level: "Negotiation-proof"
+  - name: "Chinese"
+    level: "Native"
+  - name: "Mongolian"
+    level: "Native"

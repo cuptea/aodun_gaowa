@@ -1,0 +1,118 @@
+---
+layout: default
+title: Aodun Gaowa | Portfolio
+---
+
+{% assign resume = site.data.resume %}
+
+<div class="flex flex-col md:flex-row min-h-screen">
+    <!-- Sidebar -->
+    <aside class="w-full md:w-80 border-b md:border-b-0 md:border-r border-[#1A1A1A]/5 p-8 md:p-12 flex flex-col justify-between">
+        <div class="space-y-16">
+            <div class="flex flex-col space-y-4">
+                <span class="font-mono font-bold text-sm tracking-tighter uppercase">Profile.Core</span>
+                <div class="space-y-6">
+                    <section>
+                        <h4 class="text-[10px] uppercase tracking-[0.2em] font-bold opacity-40 mb-3">Essentials</h4>
+                        <ul class="space-y-3 font-mono text-[11px]">
+                            <li class="flex justify-between"><span>Status</span> <span class="opacity-50 italic">{{ resume.contact.status }}</span></li>
+                            <li class="flex justify-between"><span>Nationality</span> <span class="opacity-50 italic">{{ resume.contact.nationality }}</span></li>
+                            <li class="flex justify-between"><span>Base</span> <span class="opacity-50 italic">{{ resume.contact.location }}</span></li>
+                        </ul>
+                    </section>
+                    
+                    <section>
+                        <h4 class="text-[10px] uppercase tracking-[0.2em] font-bold opacity-40 mb-3">Connect</h4>
+                        <div class="space-y-2 text-xs font-mono">
+                            <p class="truncate"><a href="mailto:{{ resume.contact.email }}" class="hover:opacity-60">{{ resume.contact.email }}</a></p>
+                            <p>{{ resume.contact.phone }}</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <div class="p-6 bg-[#1A1A1A] rounded-2xl text-white">
+                <p class="text-[10px] uppercase tracking-widest font-bold mb-2 opacity-50">Latest Role</p>
+                <p class="text-xs font-mono">{{ resume.experience[0].role }}</p>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-8 md:p-20 lg:p-24 overflow-y-auto">
+        <header class="max-w-3xl mb-32">
+            <h1 class="text-[80px] md:text-[130px] leading-[0.8] font-serif tracking-tighter mb-8 text-[#1A1A1A]">
+                {{ resume.name | split: ' ' | first }} <br/> 
+                <span class="italic opacity-20">{{ resume.name | split: ' ' | last }}.</span>
+            </h1>
+            <p class="text-2xl md:text-3xl font-light leading-snug tracking-tight max-w-xl opacity-80 text-[#1A1A1A]">
+                A strategic leader in <span class="font-serif italic font-medium uppercase text-lg tracking-widest bg-[#1A1A1A] text-white px-2 py-1 mx-1 rounded-sm">Business Development</span> and industrial management.
+            </p>
+        </header>
+
+        <div class="max-w-4xl space-y-40">
+            <!-- Experience -->
+            <section>
+                <div class="relative mb-12">
+                    <h2 class="text-[10px] font-bold uppercase tracking-[0.3em] opacity-40 mb-2">Professional Lineup</h2>
+                    <div class="h-[2px] w-full bg-[#1A1A1A]"></div>
+                </div>
+                
+                <div class="space-y-24">
+                    {% for job in resume.experience %}
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 text-[#1A1A1A]">
+                        <div class="lg:col-span-4">
+                            <span class="font-mono text-xs font-bold opacity-30 uppercase tracking-[0.2em] mb-2 block">{{ job.period }}</span>
+                            <h3 class="text-2xl font-serif italic mb-4">{{ job.company }}</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 border border-[#1A1A1A]/10 rounded text-[9px] uppercase font-bold tracking-widest">{{ job.location }}</span>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-8 space-y-6">
+                            <p class="text-xl font-medium tracking-tight border-b border-[#1A1A1A]/5 pb-4">{{ job.role }}</p>
+                            <ul class="space-y-4">
+                                {% for task in job.tasks %}
+                                <li class="flex items-start gap-4 group">
+                                    <span class="text-[10px] font-mono opacity-20 mt-1.5 min-w-[24px]">0{{ forloop.index }}</span>
+                                    <span class="text-sm md:text-base opacity-70 leading-relaxed">{{ task }}</span>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </section>
+
+            <!-- Education -->
+            <section>
+                <div class="relative mb-12">
+                    <h2 class="text-[10px] font-bold uppercase tracking-[0.3em] opacity-40 mb-2">Education Paths</h2>
+                    <div class="h-[2px] w-full bg-[#1A1A1A]"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-[#1A1A1A]">
+                    {% for edu in resume.education %}
+                    <div class="space-y-2">
+                        <span class="font-mono text-xs opacity-30">{{ edu.period }}</span>
+                        <h4 class="text-xl font-serif italic">{{ edu.degree }}</h4>
+                        <p class="text-sm opacity-60">{{ edu.school }}</p>
+                    </div>
+                    {% endfor %}
+                </div>
+            </section>
+
+            <!-- Footer Status -->
+            <div class="flex flex-col md:flex-row items-center justify-between text-[10px] font-mono uppercase tracking-widest opacity-40 border-t border-[#1A1A1A]/10 pt-12 pb-12">
+                <div class="flex space-x-6 mb-4 md:mb-0">
+                    <span>Build: static.jekyll</span>
+                    <span>Status: production</span>
+                    <span>© {{ site.time | date: '%Y' }}</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <div class="w-2 h-2 rounded-full bg-green-500"></div>
+                    <span>Github Pages Online</span>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
