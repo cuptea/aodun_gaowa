@@ -96,7 +96,7 @@ languages:
         school: "Interkulturelles Management & Linguistik"
 
   zh:
-    role: "商业发展经理"
+    role: "商业发展经理 test"
     contact:
       location: "德国巴伐利亚州慕尼黑"
       born: "中国内蒙古"
