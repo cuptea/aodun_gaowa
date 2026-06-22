@@ -1,0 +1,36 @@
+{% assign block = include.block %}
+
+{% case block.type %}
+{% when 'h3' %}
+<h3 class="font-bold mb-2 mt-6">{{ block.text }}</h3>
+
+{% when 'p' %}
+<p>{{ block.text }}</p>
+
+{% when 'qa' %}
+<p class="mb-2"><strong>{{ block.question }}</strong></p>
+<p class="{% unless include.last %}mb-4{% endunless %}">{{ block.answer }}</p>
+
+{% when 'ul' %}
+<ul class="list-disc list-inside mt-2 mb-4 space-y-1">
+    {% for item in block.items %}
+    <li>{{ item }}</li>
+    {% endfor %}
+</ul>
+
+{% when 'address' %}
+<p class="mb-4 font-mono text-xs">
+    {% for line in block.lines %}
+    {{ line }}{% unless forloop.last %}<br>{% endunless %}
+    {% endfor %}
+</p>
+
+{% when 'link' %}
+<p>
+    {{ block.before }}
+    <a href="{{ block.url }}" class="underline hover:opacity-60" target="_blank" rel="noopener noreferrer">
+        {{ block.label }}
+    </a>{{ block.after }}
+</p>
+
+{% endcase %}

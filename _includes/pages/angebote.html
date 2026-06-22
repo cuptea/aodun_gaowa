@@ -1,0 +1,45 @@
+{% assign page_content = site.data.content.angebote %}
+
+<div class="max-w-4xl mx-auto px-8 py-16 md:py-24">
+
+    <header class="mb-24">
+        <h1 class="text-5xl md:text-6xl font-serif tracking-tighter mb-6 text-[#1A1A1A]">
+            {{ page_content.heading }}
+        </h1>
+
+        <p class="text-lg opacity-60 max-w-2xl">
+            {{ page_content.subtitle }}
+        </p>
+    </header>
+
+    {% for section in page_content.sections %}
+    <section class="mb-20">
+        {% include section-heading.html heading=section.heading %}
+
+        <ul class="space-y-4 text-sm opacity-70">
+            {% for item in section.items %}
+            <li class="flex items-start gap-4">
+                <span class="text-[10px] font-mono opacity-30 mt-1">0{{ forloop.index }}</span>
+                <span>{{ item }}</span>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+    {% endfor %}
+
+    <section class="p-8 bg-[#1A1A1A] rounded-2xl text-white">
+        <p class="text-[10px] uppercase tracking-widest font-bold mb-2 opacity-50">
+            {{ page_content.cta.label }}
+        </p>
+
+        <p class="text-sm font-mono mb-6 opacity-80">
+            {{ page_content.cta.text }}
+        </p>
+
+        <a href="mailto:{{ page_content.cta.email }}"
+           class="inline-block px-6 py-2 text-xs font-mono uppercase tracking-widest bg-white text-[#1A1A1A] rounded transition hover:opacity-80">
+            {{ page_content.cta.button }}
+        </a>
+    </section>
+
+</div>

@@ -1,0 +1,26 @@
+{% assign page_content = site.data.content.datenschutz %}
+
+<div class="max-w-3xl mx-auto px-8 py-16 md:py-24 text-[#1A1A1A]">
+
+    <header class="mb-16">
+        <h1 class="text-4xl md:text-5xl font-serif tracking-tighter mb-4">
+            {{ page_content.heading }}
+        </h1>
+        <p class="text-sm font-mono opacity-40 uppercase tracking-widest">
+            {{ page_content.subtitle }}
+        </p>
+    </header>
+
+    <div class="space-y-12 text-sm leading-relaxed opacity-80">
+        {% for section in page_content.sections %}
+        <section>
+            <h2 class="text-lg font-serif italic mb-4">{{ section.heading }}</h2>
+
+            {% for block in section.blocks %}
+            {% include content-block.html block=block %}
+            {% endfor %}
+        </section>
+        {% endfor %}
+    </div>
+
+</div>

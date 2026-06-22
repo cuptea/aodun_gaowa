@@ -3,6 +3,11 @@ name: "Aodun Gaowa"
 languages:
   en:
     role: "Business Development Manager"
+    hero:
+      before: "A strategic leader in"
+      highlight: "Business Development"
+      after: "specializing in China-Germany partnerships"
+    performance_keywords: "China & Germany · Procurement · Market Entry · Industry"
     contact:
       location: "Munich, Bavaria, Germany"
       born: "Inner Mongolia, China"
@@ -50,6 +55,11 @@ languages:
 
   de:
     role: "Business Development Manager"
+    hero:
+      before: "Ein strategischer Führungskopf im"
+      highlight: "Business Development"
+      after: "mit Spezialgebiet China-Deutschland Partnerschaften"
+    performance_keywords: "China & Deutschland · Beschaffung · Markteintritt · Industrie"
     contact:
       location: "München, Bayern, Deutschland"
       born: "Innere Mongolei, China"
@@ -97,6 +107,11 @@ languages:
 
   zh:
     role: "商业发展经理 test"
+    hero:
+      before: "一位"
+      highlight: "商业发展"
+      after: "领域的战略领袖，专门从事中德合作"
+    performance_keywords: "中国和德国 · 采购 · 市场进入 · 工业"
     contact:
       location: "德国巴伐利亚州慕尼黑"
       born: "中国内蒙古"

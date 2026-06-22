@@ -1,0 +1,55 @@
+{% assign page_content = site.data.content.home %}
+
+<div class="max-w-4xl mx-auto px-8 py-16 md:py-24">
+
+    <header class="mb-24">
+        <h1 class="text-5xl md:text-7xl font-serif tracking-tighter mb-8 text-[#1A1A1A]">
+            {{ page_content.hero.name_primary }}
+            <span class="italic opacity-30">{{ page_content.hero.name_secondary }}</span>
+        </h1>
+
+        <p class="text-xl md:text-2xl font-light leading-snug max-w-2xl opacity-80">
+            {{ page_content.hero.tagline_before }}
+            <span class="font-serif italic">{{ page_content.hero.tagline_emphasis[0] }}</span> und
+            <span class="font-serif italic">{{ page_content.hero.tagline_emphasis[1] }}</span>{{ page_content.hero.tagline_after }}
+        </p>
+    </header>
+
+    <section class="mb-20">
+        {% include section-heading.html heading=page_content.intro.heading %}
+
+        <p class="text-base opacity-70 leading-relaxed max-w-2xl">
+            {{ page_content.intro.text }}
+        </p>
+    </section>
+
+    <section class="mb-20">
+        {% include section-heading.html heading=page_content.highlights.heading %}
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {% for item in page_content.highlights.items %}
+            <div class="border-l-2 border-[#1A1A1A]/20 pl-6">
+                <h3 class="text-lg font-serif italic mb-2">{{ item.title }}</h3>
+                <p class="text-sm opacity-60">{{ item.description }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <section class="p-8 bg-[#1A1A1A]/5 rounded-lg border border-[#1A1A1A]/10">
+        <p class="text-sm opacity-70 mb-6">
+            {{ page_content.cta.text }}
+        </p>
+
+        <div class="flex flex-wrap gap-4">
+            {% for button in page_content.cta.buttons %}
+            <a href="{{ button.url | relative_url }}"
+               class="px-6 py-2 text-xs font-mono uppercase tracking-widest rounded transition
+                      {% if button.style == 'primary' %}bg-[#1A1A1A] text-white hover:opacity-80{% else %}border border-[#1A1A1A]/20 hover:opacity-60{% endif %}">
+                {{ button.label }}
+            </a>
+            {% endfor %}
+        </div>
+    </section>
+
+</div>

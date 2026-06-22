@@ -1,25 +1,8 @@
 ---
 layout: default
-title: Aodun Gaowa | Portfolio
+page_key: home
+lang: de
+nav_active: home
 ---
 
-<div class="flex items-center justify-center min-h-screen font-mono text-xs opacity-50">
-    Redirecting to your preferred language...
-</div>
-
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-    // Get preferred language from localStorage or default to English
-    const savedLang = localStorage.getItem('preferredLanguage') || 'en';
-    
-    // Define the language paths mapping using Jekyll relative_url
-    const paths = {
-        'en': "{{ '/index_en.html' | relative_url }}",
-        'de': "{{ '/index_de.html' | relative_url }}",
-        'zh': "{{ '/index_zh.html' | relative_url }}"
-    };
-    
-    // Redirect to the static page
-    window.location.replace(paths[savedLang] || paths['en']);
-});
-</script>
+{% include pages/home.html %}
