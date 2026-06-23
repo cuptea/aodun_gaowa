@@ -1,10 +1,12 @@
 {% assign c = site.data.content %}
+{% assign nav_lang = page.lang | default: 'de' %}
+{% assign nav_items = c.nav[nav_lang] | default: c.nav.de %}
 
 <nav class="sticky top-0 z-50 bg-[#FDFCFB]/95 backdrop-blur-sm border-b border-[#1A1A1A]/10">
     <div class="max-w-6xl mx-auto px-6 py-4 flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
         {% assign active = page.nav_active | default: '' %}
 
-        {% for item in c.nav %}
+        {% for item in nav_items %}
         <a href="{{ item.url | relative_url }}"
            class="text-xs font-mono uppercase tracking-widest transition {% if active == item.id %}text-[#1A1A1A] font-bold{% else %}opacity-40 hover:opacity-70{% endif %}">
             {{ item.label }}

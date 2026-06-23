@@ -1,4 +1,15 @@
-{% assign page_content = site.data.content.home %}
+{% assign lang = page.lang | default: 'de' %}
+{% assign page_content = site.data.content.home[lang] | default: site.data.content.home.de %}
+{% assign page_switcher = site.data.content.language_switcher.home %}
+
+<div class="fixed top-14 right-0 p-4 md:p-8 z-40 flex gap-2">
+    {% for switch in page_switcher %}
+    <a href="{{ switch.url | relative_url }}"
+       class="px-3 py-1 text-xs font-mono uppercase tracking-widest {% if lang == switch.code %}bg-[#1A1A1A] text-white{% else %}opacity-40 hover:opacity-60{% endif %} rounded transition">
+        {{ switch.label }}
+    </a>
+    {% endfor %}
+</div>
 
 <div class="max-w-4xl mx-auto px-8 py-16 md:py-24">
 
@@ -30,7 +41,7 @@
     <section class="mb-20">
         {% include section-heading.html heading=page_content.highlights.heading %}
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             {% for item in page_content.highlights.items %}
             <div class="border-l-2 border-[#1A1A1A]/20 pl-6">
                 <h3 class="text-lg font-serif italic mb-2">{{ item.title }}</h3>

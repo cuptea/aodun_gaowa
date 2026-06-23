@@ -1,278 +1,896 @@
 {
-  "nav": [
-    {
-      "id": "home",
-      "label": "Home",
-      "url": "/"
-    },
-    {
-      "id": "angebote",
-      "label": "Angebote",
-      "url": "/angebote.html"
-    },
-    {
-      "id": "ueber_mich",
-      "label": "Über mich",
-      "url": "/ueber_mich_de.html"
-    },
-    {
-      "id": "datenschutz",
-      "label": "Datenschutz",
-      "url": "/datenschutz.html"
-    },
-    {
-      "id": "impressum",
-      "label": "Impressum",
-      "url": "/impressum.html"
-    }
-  ],
+  "nav": {
+    "de": [
+      {
+        "id": "home",
+        "label": "Home",
+        "url": "/"
+      },
+      {
+        "id": "angebote",
+        "label": "Angebote",
+        "url": "/angebote.html"
+      },
+      {
+        "id": "ueber_mich",
+        "label": "Über mich",
+        "url": "/ueber_mich_de.html"
+      },
+      {
+        "id": "datenschutz",
+        "label": "Datenschutz",
+        "url": "/datenschutz.html"
+      },
+      {
+        "id": "impressum",
+        "label": "Impressum",
+        "url": "/impressum.html"
+      }
+    ],
+    "en": [
+      {
+        "id": "home",
+        "label": "Home",
+        "url": "/index_en.html"
+      },
+      {
+        "id": "angebote",
+        "label": "Services",
+        "url": "/angebote_en.html"
+      },
+      {
+        "id": "ueber_mich",
+        "label": "About me",
+        "url": "/ueber_mich_en.html"
+      },
+      {
+        "id": "datenschutz",
+        "label": "Privacy",
+        "url": "/datenschutz_en.html"
+      },
+      {
+        "id": "impressum",
+        "label": "Imprint",
+        "url": "/impressum_en.html"
+      }
+    ],
+    "zh": [
+      {
+        "id": "home",
+        "label": "首页",
+        "url": "/index_zh.html"
+      },
+      {
+        "id": "angebote",
+        "label": "服务内容",
+        "url": "/angebote_zh.html"
+      },
+      {
+        "id": "ueber_mich",
+        "label": "关于我",
+        "url": "/ueber_mich_zh.html"
+      },
+      {
+        "id": "datenschutz",
+        "label": "隐私声明",
+        "url": "/datenschutz_zh.html"
+      },
+      {
+        "id": "impressum",
+        "label": "版权与免责声明",
+        "url": "/impressum_zh.html"
+      }
+    ]
+  },
+  "language_switcher": {
+    "home": [
+      {
+        "code": "de",
+        "label": "DE",
+        "url": "/"
+      },
+      {
+        "code": "en",
+        "label": "EN",
+        "url": "/index_en.html"
+      },
+      {
+        "code": "zh",
+        "label": "中文",
+        "url": "/index_zh.html"
+      }
+    ],
+    "angebote": [
+      {
+        "code": "de",
+        "label": "DE",
+        "url": "/angebote.html"
+      },
+      {
+        "code": "en",
+        "label": "EN",
+        "url": "/angebote_en.html"
+      },
+      {
+        "code": "zh",
+        "label": "中文",
+        "url": "/angebote_zh.html"
+      }
+    ],
+    "datenschutz": [
+      {
+        "code": "de",
+        "label": "DE",
+        "url": "/datenschutz.html"
+      },
+      {
+        "code": "en",
+        "label": "EN",
+        "url": "/datenschutz_en.html"
+      },
+      {
+        "code": "zh",
+        "label": "中文",
+        "url": "/datenschutz_zh.html"
+      }
+    ],
+    "impressum": [
+      {
+        "code": "de",
+        "label": "DE",
+        "url": "/impressum.html"
+      },
+      {
+        "code": "en",
+        "label": "EN",
+        "url": "/impressum_en.html"
+      },
+      {
+        "code": "zh",
+        "label": "中文",
+        "url": "/impressum_zh.html"
+      }
+    ]
+  },
   "home": {
-    "page_title": "Gaowa Consulting | Home",
-    "hero": {
-      "name_primary": "Gaowa",
-      "name_secondary": "Consulting",
-      "tagline_before": "Ihr Partner für deutsch-chinesische Lieferketten und Business Development",
-      "tagline_emphasis": [
-        "",
-        ""
-      ],
-      "tagline_after": "",
-      "tagline": "Ihr Partner für deutsch-chinesische Lieferketten und Business Development"
+    "de": {
+      "page_title": "Gaowa Consulting | Home",
+      "hero": {
+        "name_primary": "Gaowa",
+        "name_secondary": "Consulting",
+        "tagline_before": "Ihr Partner für deutsch-chinesische Lieferketten und Business Development",
+        "tagline_emphasis": [
+          "",
+          ""
+        ],
+        "tagline_after": "",
+        "tagline": "Ihr Partner für deutsch-chinesische Lieferketten und Business Development"
+      },
+      "intro": {
+        "heading": "Willkommen",
+        "text": "Gaowa Consulting unterstützt deutsche und chinesische Unternehmen beim Aufbau effizienter, zuverlässiger und nachhaltiger Geschäftsbeziehungen. Mit über 15 Jahren Industrieerfahrung, technischer Kompetenz und interkultureller Expertise begleite ich deutsche Unternehmen bei Sourcing-Projekten, technischen Klärungen und strategischer Markteintrittsplanung für chinesische Unternehmen im deutschen Markt."
+      },
+      "highlights": {
+        "heading": "Schwerpunkte und Leistungen",
+        "items": [
+          {
+            "title": "Strategische Beschaffung & Sourcing in China",
+            "description": "Identifikation, Bewertung und Qualifizierung geeigneter chinesischer Lieferanten und Auftragsfertiger – von Komponenten über Maschinen bis hin zu kompletten Fertigungslinien und Prüfmitteln."
+          },
+          {
+            "title": "Marktentwicklung & Business Development",
+            "description": "Lokalisierte Eintrittsstrategien für chinesische Unternehmen in der DACH-Region sowie Unterstützung deutscher Unternehmen beim Aufbau nachhaltiger Marktpositionen in China."
+          },
+          {
+            "title": "Technische Klärung & Projektmanagement",
+            "description": "Begleitung internationaler Projekte entlang technischer Schnittstellen, Durchführung von Machbarkeitsbewertungen sowie Unterstützung in Industrialisierungs- und Qualitätsprozessen."
+          },
+          {
+            "title": "Partnerschaften & Interkulturelle Kooperationen",
+            "description": "Förderung von B2B-Vernetzung, Begleitung von Verhandlungen in Deutsch und Chinesisch sowie Aufbau stabiler Kooperationen über Kultur- und Systemgrenzen hinweg."
+          }
+        ]
+      },
+      "cta": {
+        "text": "Kontakt: a.gaowa@gaowa-consulting.de · +49 152 3390 3259",
+        "buttons": [
+          {
+            "label": "Angebote ansehen",
+            "url": "/angebote.html",
+            "style": "primary"
+          },
+          {
+            "label": "Über mich",
+            "url": "/ueber_mich_de.html",
+            "style": "secondary"
+          }
+        ]
+      }
     },
-    "intro": {
-      "heading": "Willkommen",
-      "text": "Gaowa Consulting unterstützt deutsche und chinesische Unternehmen beim Aufbau effizienter, zuverlässiger und nachhaltiger Geschäftsbeziehungen. Mit über 15 Jahren Industrieerfahrung, technischer Kompetenz und interkultureller Expertise begleite ich deutsche Unternehmen bei Sourcing-Projekten, technischen Klärungen und strategischer Markteintrittsplanung für chinesische Unternehmen im deutschen Markt."
+    "en": {
+      "page_title": "Gaowa Consulting | Home",
+      "hero": {
+        "name_primary": "Gaowa",
+        "name_secondary": "Consulting",
+        "tagline": "Your Partner for German-Chinese Supply Chains and Business Development"
+      },
+      "intro": {
+        "heading": "Welcome",
+        "text": "Gaowa Consulting supports German and Chinese companies in building efficient, reliable and sustainable business relationships. With more than 15 years of industry experience, technical expertise and intercultural competence, I support German companies in sourcing projects and technical clarifications, as well as Chinese companies in developing strategic market entry plans for the German market."
+      },
+      "highlights": {
+        "heading": "Focus Areas & Services",
+        "items": [
+          {
+            "title": "Strategic Procurement & Sourcing in China",
+            "description": "Identification, evaluation and qualification of suitable Chinese suppliers and contract manufacturers – from components and machinery to complete production lines and testing equipment."
+          },
+          {
+            "title": "Market Development & Business Development",
+            "description": "Localized entry strategies for Chinese companies in the DACH region and support for German companies in building sustainable market positions in China."
+          },
+          {
+            "title": "Technical Clarification & Project Management",
+            "description": "Support of international projects along technical interfaces, feasibility assessments and assistance in industrialization and quality processes."
+          },
+          {
+            "title": "Partnerships & Intercultural Cooperation",
+            "description": "Facilitation of B2B networking, negotiation support in German and Chinese, and development of stable cooperation across cultural and organizational boundaries."
+          }
+        ]
+      },
+      "cta": {
+        "text": "Contact: a.gaowa@gaowa-consulting.de · +49 152 3390 3259",
+        "buttons": [
+          {
+            "label": "View services",
+            "url": "/angebote_en.html",
+            "style": "primary"
+          },
+          {
+            "label": "About me",
+            "url": "/ueber_mich_en.html",
+            "style": "secondary"
+          }
+        ]
+      }
     },
-    "highlights": {
-      "heading": "Schwerpunkte und Leistungen",
-      "items": [
-        {
-          "title": "Strategische Beschaffung & Sourcing in China",
-          "description": "Identifikation, Bewertung und Qualifizierung geeigneter chinesischer Lieferanten und Auftragsfertiger – von Komponenten über Maschinen bis hin zu kompletten Fertigungslinien und Prüfmitteln."
-        },
-        {
-          "title": "Marktentwicklung & Business Development",
-          "description": "Lokalisierte Eintrittsstrategien für chinesische Unternehmen in der DACH-Region sowie Unterstützung deutscher Unternehmen beim Aufbau nachhaltiger Marktpositionen in China."
-        },
-        {
-          "title": "Technische Klärung & Projektmanagement",
-          "description": "Begleitung internationaler Projekte entlang technischer Schnittstellen, Durchführung von Machbarkeitsbewertungen sowie Unterstützung in Industrialisierungs- und Qualitätsprozessen."
-        },
-        {
-          "title": "Partnerschaften & Interkulturelle Kooperationen",
-          "description": "Förderung von B2B-Vernetzung, Begleitung von Verhandlungen in Deutsch und Chinesisch sowie Aufbau stabiler Kooperationen über Kultur- und Systemgrenzen hinweg."
-        }
-      ]
-    },
-    "cta": {
-      "text": "Kontakt: a.gaowa@gaowa-consulting.de · +49 152 3390 3259",
-      "buttons": [
-        {
-          "label": "Angebote ansehen",
-          "url": "/angebote.html",
-          "style": "primary"
-        },
-        {
-          "label": "Über mich",
-          "url": "/ueber_mich_de.html",
-          "style": "secondary"
-        }
-      ]
+    "zh": {
+      "page_title": "Gaowa Consulting | 首页",
+      "hero": {
+        "name_primary": "Gaowa",
+        "name_secondary": "Consulting",
+        "tagline": "您在德中供应链与商务拓展领域的专业合作伙伴"
+      },
+      "intro": {
+        "heading": "欢迎访问",
+        "text": "Gaowa Consulting 为德国和中国企业提供支持，帮助建立高效、可靠、可持续的业务合作关系。凭借超过15年的行业经验、技术能力和跨文化专业知识，我为德国企业提供供应链与技术支持，并为中国企业制定进入德国市场的战略规划。"
+      },
+      "highlights": {
+        "heading": "核心服务",
+        "items": [
+          {
+            "title": "中国战略采购与供应商开发",
+            "description": "识别、评估并审核合适的中国供应商和代工制造商——涵盖零部件、设备、整条生产线及检测工装。"
+          },
+          {
+            "title": "市场拓展与商务发展",
+            "description": "为中国企业提供本地化的DACH市场进入策略，并支持德国企业在中国建立可持续的市场地位。"
+          },
+          {
+            "title": "技术沟通与项目管理",
+            "description": "支持国际项目的技术接口管理、可行性分析，以及工业化与质量流程的推进。"
+          },
+          {
+            "title": "合作伙伴关系与跨文化沟通",
+            "description": "促进B2B对接，提供德语/中文谈判支持，搭建跨文化、跨体系的稳定合作关系。"
+          }
+        ]
+      },
+      "cta": {
+        "text": "联系方式：a.gaowa@gaowa-consulting.de · +49 152 3390 3259",
+        "buttons": [
+          {
+            "label": "查看服务",
+            "url": "/angebote_zh.html",
+            "style": "primary"
+          },
+          {
+            "label": "关于我",
+            "url": "/ueber_mich_zh.html",
+            "style": "secondary"
+          }
+        ]
+      }
     }
   },
   "angebote": {
-    "page_title": "Gaowa Consulting | Leistungen",
-    "heading": "Leistungen",
-    "subtitle": "Gaowa Consulting bietet spezialisierte Dienstleistungen an der Schnittstelle zwischen deutschen KMU und chinesischen Industriepartnern. Der Fokus liegt auf technischer Präzision, interkultureller Kompetenz und nachhaltigen Geschäftsbeziehungen.",
-    "sections": [
-      {
-        "heading": "Unternehmensberatung (DE–CN Business Development)",
-        "items": [
-          "Strategie: Markt- und Wettbewerbsanalysen; Markteintrittsstrategien; Bewertung technischer Anforderungen",
-          "Technische Klärung: Schnittstellenklärung DE/CN; Analyse von Spezifikationen; Vorbereitung technischer Entscheidungen",
-          "Projektmanagement: Internationale Beschaffungs- und Entwicklungsprojekte; Termin- und Meilensteinsteuerung; Risikomanagement",
-          "Interkulturelle Unterstützung: Verhandlungsbegleitung (DE/CN); Moderation technischer und kaufmännischer Teams; Begleitung von Industrialisierungs- und Qualitätsprozessen"
-        ]
-      },
-      {
-        "heading": "Sourcing in China – Lieferanten- und Auftragsfertigersuche",
-        "items": [
-          "Lieferanten- und Fertigerselektion: Komponenten, Maschinen, Fertigungslinien, Werkzeuge, Schweißvorrichtungen, Lehren & Prüfmittel, Automotive-Teile und Sonderanfertigungen",
-          "Bewertung & Analyse: Lieferantenrecherche, Machbarkeitsbewertung sowie Angebots- und Kostenanalyse",
-          "Qualifizierung: Vor-Ort-Audits, Prozess- und Qualitätsbewertungen sowie Lieferkettenrisikoanalyse",
-          "Umsetzung: Musterteile & Erstbemusterung, technische Spezifikationsabstimmung, Vertrags- und Preisvorbereitung sowie Begleitung bis zur Serienreife"
-        ]
-      },
-      {
-        "heading": "Business Development für chinesische Unternehmen (DACH)",
-        "items": [
-          "Markteintritt: Marktanalyse DACH, Eintrittsstrategie und Produktpositionierung",
-          "Netzwerkaufbau: Identifikation potenzieller Kunden, Vorbereitung von Terminen und Unterstützung bei Erstkontakten",
-          "Technische & regulatorische Vorbereitung: Deutsche Normen & Anforderungen, technische Spezifikationen sowie Qualitäts- und Auditstandards",
-          "Interkulturelle Kommunikation: Termin- und Verhandlungsbegleitung (DE/CN), Vermittlung technischer Anforderungen und Moderation zwischen Teams"
-        ]
+    "de": {
+      "page_title": "Gaowa Consulting | Leistungen",
+      "heading": "Leistungen",
+      "subtitle": "Gaowa Consulting bietet spezialisierte Dienstleistungen an der Schnittstelle zwischen deutschen KMU und chinesischen Industriepartnern. Der Fokus liegt auf technischer Präzision, interkultureller Kompetenz und nachhaltigen Geschäftsbeziehungen.",
+      "sections": [
+        {
+          "heading": "Unternehmensberatung (DE–CN Business Development)",
+          "items": [
+            "Strategie: Markt- und Wettbewerbsanalysen; Markteintrittsstrategien; Bewertung technischer Anforderungen",
+            "Technische Klärung: Schnittstellenklärung DE/CN; Analyse von Spezifikationen; Vorbereitung technischer Entscheidungen",
+            "Projektmanagement: Internationale Beschaffungs- und Entwicklungsprojekte; Termin- und Meilensteinsteuerung; Risikomanagement",
+            "Interkulturelle Unterstützung: Verhandlungsbegleitung (DE/CN); Moderation technischer und kaufmännischer Teams; Begleitung von Industrialisierungs- und Qualitätsprozessen"
+          ]
+        },
+        {
+          "heading": "Sourcing in China – Lieferanten- und Auftragsfertigersuche",
+          "items": [
+            "Lieferanten- und Fertigerselektion: Komponenten, Maschinen, Fertigungslinien, Werkzeuge, Schweißvorrichtungen, Lehren & Prüfmittel, Automotive-Teile und Sonderanfertigungen",
+            "Bewertung & Analyse: Lieferantenrecherche, Machbarkeitsbewertung sowie Angebots- und Kostenanalyse",
+            "Qualifizierung: Vor-Ort-Audits, Prozess- und Qualitätsbewertungen sowie Lieferkettenrisikoanalyse",
+            "Umsetzung: Musterteile & Erstbemusterung, technische Spezifikationsabstimmung, Vertrags- und Preisvorbereitung sowie Begleitung bis zur Serienreife"
+          ]
+        },
+        {
+          "heading": "Business Development für chinesische Unternehmen (DACH)",
+          "items": [
+            "Markteintritt: Marktanalyse DACH, Eintrittsstrategie und Produktpositionierung",
+            "Netzwerkaufbau: Identifikation potenzieller Kunden, Vorbereitung von Terminen und Unterstützung bei Erstkontakten",
+            "Technische & regulatorische Vorbereitung: Deutsche Normen & Anforderungen, technische Spezifikationen sowie Qualitäts- und Auditstandards",
+            "Interkulturelle Kommunikation: Termin- und Verhandlungsbegleitung (DE/CN), Vermittlung technischer Anforderungen und Moderation zwischen Teams"
+          ]
+        }
+      ],
+      "cta": {
+        "label": "Kontakt",
+        "text": "Kontaktieren Sie Gaowa Consulting für ein unverbindliches Erstgespräch.",
+        "email": "a.gaowa@gaowa-consulting.de",
+        "button": "E-Mail senden"
       }
-    ],
-    "cta": {
-      "label": "Kontakt",
-      "text": "Kontaktieren Sie Gaowa Consulting für ein unverbindliches Erstgespräch.",
-      "email": "a.gaowa@gaowa-consulting.de",
-      "button": "E-Mail senden"
+    },
+    "en": {
+      "page_title": "Gaowa Consulting | Services",
+      "heading": "Services",
+      "subtitle": "Gaowa Consulting provides specialized services at the interface between German SMEs and Chinese industrial partners. The focus lies on technical precision, intercultural competence and sustainable business relationships.",
+      "sections": [
+        {
+          "heading": "Consulting (DE–CN Business Development)",
+          "items": [
+            "Strategy: market and competition analyses; market entry strategies; evaluation of technical requirements.",
+            "Technical clarification: DE/CN interface clarification; specification analysis; preparation of technical decisions.",
+            "Project management: international procurement and development projects; timeline and milestone management; risk management.",
+            "Intercultural support: negotiation support (DE/CN); moderation of technical and commercial teams; support in industrialization and quality processes."
+          ]
+        },
+        {
+          "heading": "Sourcing in China – Supplier & Contract Manufacturer Search",
+          "items": [
+            "Supplier and manufacturer selection: components, machinery, production lines, tools, welding fixtures, gauges and testing equipment, automotive parts and custom-made products.",
+            "Evaluation and analysis: supplier research, feasibility assessments, offer and cost analysis.",
+            "Qualification: on-site audits, process and quality assessments, supply chain risk analysis.",
+            "Implementation: sample parts and initial sampling, technical specification alignment, contract and price preparation, support until start of series production."
+          ]
+        },
+        {
+          "heading": "Business Development for Chinese Companies (DACH)",
+          "items": [
+            "Market entry: DACH market analysis, entry strategy and product positioning.",
+            "Network development: identification of potential customers, preparation of meetings and support with initial contacts.",
+            "Technical and regulatory preparation: German standards and requirements, technical specifications, quality and audit standards.",
+            "Intercultural communication: meeting and negotiation support (DE/CN), communication of technical requirements and moderation between teams."
+          ]
+        }
+      ],
+      "cta": {
+        "label": "Contact",
+        "text": "Contact Gaowa Consulting for a non-binding initial consultation.",
+        "email": "a.gaowa@gaowa-consulting.de",
+        "button": "Send email"
+      }
+    },
+    "zh": {
+      "page_title": "Gaowa Consulting | 服务内容",
+      "heading": "服务内容",
+      "subtitle": "Gaowa Consulting 专注于德国中小企业与中国工业企业之间的技术与商务合作，重点关注技术精准性、跨文化沟通能力和可持续的业务关系。",
+      "sections": [
+        {
+          "heading": "企业咨询（德中商务发展）",
+          "items": [
+            "战略咨询：市场与竞争分析、市场进入策略、技术需求评估。",
+            "技术沟通：德中技术接口沟通、技术规格分析、技术决策准备。",
+            "项目管理：国际采购与开发项目、时间与里程碑管理、风险管理。",
+            "跨文化支持：德中谈判支持、技术与商务团队协调、工业化与质量流程支持。"
+          ]
+        },
+        {
+          "heading": "中国供应商与代工厂寻源",
+          "items": [
+            "供应商选择：零部件、设备、生产线、工装与夹具、焊接夹具、检测工装、汽车零部件和定制产品。",
+            "评估与分析：供应商调研、可行性分析、报价与成本分析。",
+            "资质审核：现场审核、工艺与质量评估、供应链风险分析。",
+            "实施支持：样件与首件检验、技术规格对齐、合同与价格准备，直至量产阶段的全程支持。"
+          ]
+        },
+        {
+          "heading": "中国企业在DACH地区的商务拓展",
+          "items": [
+            "市场进入：DACH市场分析、市场进入策略、产品定位。",
+            "网络拓展：潜在客户识别、会议准备、初次商务接洽支持。",
+            "技术与法规准备：德国标准与要求、技术规格、质量与审核标准。",
+            "跨文化沟通：德中会议与谈判支持、技术需求沟通、团队协调与沟通。"
+          ]
+        }
+      ],
+      "cta": {
+        "label": "联系方式",
+        "text": "欢迎联系 Gaowa Consulting 进行初步沟通。",
+        "email": "a.gaowa@gaowa-consulting.de",
+        "button": "发送邮件"
+      }
     }
   },
   "datenschutz": {
-    "page_title": "Gaowa Consulting | Datenschutzerklärung",
-    "heading": "Datenschutzerklärung",
-    "subtitle": "Stand: Juni 2026",
-    "sections": [
-      {
-        "heading": "1. Verantwortliche Stelle",
-        "blocks": [
-          {
-            "type": "address",
-            "lines": [
-              "Aodun Gaowa",
-              "Alexander-Pachmann-Str. 4d",
-              "Bayern, Deutschland",
-              "E-Mail: a.gaowa@gaowa-consulting.de"
-            ]
-          }
-        ]
-      },
-      {
-        "heading": "2. Erhebung und Verarbeitung personenbezogener Daten",
-        "blocks": [
-          {
-            "type": "p",
-            "text": "Personenbezogene Daten werden auf dieser Website nur erhoben, wenn Sie diese freiwillig mitteilen, z. B. durch Kontaktaufnahme per E-Mail oder Telefon. Die Verarbeitung erfolgt ausschließlich zum Zweck der Bearbeitung Ihrer Anfrage oder zur Erfüllung vertraglicher Pflichten."
-          }
-        ]
-      },
-      {
-        "heading": "3. Server-Log-Dateien",
-        "blocks": [
-          {
-            "type": "p",
-            "text": "Der Provider der Website erhebt und speichert automatisch Informationen in sogenannten Server-Log-Dateien, die Ihr Browser automatisch übermittelt."
-          },
-          {
-            "type": "ul",
-            "items": [
-              "Browsertyp und Browserversion",
-              "Verwendetes Betriebssystem",
-              "Referrer-URL",
-              "Hostname des zugreifenden Rechners",
-              "Uhrzeit der Serveranfrage"
-            ]
-          },
-          {
-            "type": "p",
-            "text": "Diese Daten sind nicht bestimmten Personen zuordenbar und dienen ausschließlich der technischen Sicherheit und Optimierung der Website."
-          }
-        ]
-      },
-      {
-        "heading": "4. Cookies",
-        "blocks": [
-          {
-            "type": "p",
-            "text": "Diese Website verwendet ausschließlich technisch notwendige Cookies, sofern solche eingesetzt werden. Tracking- oder Marketing-Cookies werden nicht verwendet."
-          }
-        ]
-      },
-      {
-        "heading": "5. Kontaktaufnahme",
-        "blocks": [
-          {
-            "type": "p",
-            "text": "Wenn Sie mich per E-Mail oder Telefon kontaktieren, werden Ihre Angaben zur Bearbeitung der Anfrage gespeichert. Eine Weitergabe an Dritte erfolgt nicht ohne Ihre ausdrückliche Zustimmung."
-          }
-        ]
-      },
-      {
-        "heading": "6. Weitergabe von Daten",
-        "blocks": [
-          {
-            "type": "p",
-            "text": "Eine Übermittlung personenbezogener Daten an Dritte findet nur statt, wenn dies gesetzlich erlaubt ist oder Sie ausdrücklich eingewilligt haben."
-          }
-        ]
-      },
-      {
-        "heading": "7. Ihre Rechte",
-        "blocks": [
-          {
-            "type": "p",
-            "text": "Sie haben jederzeit das Recht auf:"
-          },
-          {
-            "type": "ul",
-            "items": [
-              "Auskunft über Ihre gespeicherten Daten",
-              "Berichtigung unrichtiger Daten",
-              "Löschung Ihrer Daten",
-              "Einschränkung der Verarbeitung",
-              "Widerspruch gegen die Verarbeitung",
-              "Datenübertragbarkeit"
-            ]
-          },
-          {
-            "type": "p",
-            "text": "Hierzu können Sie sich jederzeit an die oben genannte verantwortliche Stelle wenden."
-          }
-        ]
-      },
-      {
-        "heading": "8. Aktualität und Änderung dieser Datenschutzerklärung",
-        "blocks": [
-          {
-            "type": "p",
-            "text": "Ich behalte mir vor, diese Datenschutzerklärung bei Bedarf anzupassen, um sie an aktuelle rechtliche Anforderungen oder Änderungen meiner Leistungen anzupassen."
-          }
-        ]
-      }
-    ]
+    "de": {
+      "page_title": "Gaowa Consulting | Datenschutzerklärung",
+      "heading": "Datenschutzerklärung",
+      "subtitle": "Stand: Juni 2026",
+      "sections": [
+        {
+          "heading": "1. Verantwortliche Stelle",
+          "blocks": [
+            {
+              "type": "address",
+              "lines": [
+                "Aodun Gaowa",
+                "Alexander-Pachmann-Str. 4d",
+                "Bayern, Deutschland",
+                "E-Mail: a.gaowa@gaowa-consulting.de"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "2. Erhebung und Verarbeitung personenbezogener Daten",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Personenbezogene Daten werden auf dieser Website nur erhoben, wenn Sie diese freiwillig mitteilen, z. B. durch Kontaktaufnahme per E-Mail oder Telefon. Die Verarbeitung erfolgt ausschließlich zum Zweck der Bearbeitung Ihrer Anfrage oder zur Erfüllung vertraglicher Pflichten."
+            }
+          ]
+        },
+        {
+          "heading": "3. Server-Log-Dateien",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Der Provider der Website erhebt und speichert automatisch Informationen in sogenannten Server-Log-Dateien, die Ihr Browser automatisch übermittelt."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Browsertyp und Browserversion",
+                "Verwendetes Betriebssystem",
+                "Referrer-URL",
+                "Hostname des zugreifenden Rechners",
+                "Uhrzeit der Serveranfrage"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "Diese Daten sind nicht bestimmten Personen zuordenbar und dienen ausschließlich der technischen Sicherheit und Optimierung der Website."
+            }
+          ]
+        },
+        {
+          "heading": "4. Cookies",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Diese Website verwendet ausschließlich technisch notwendige Cookies, sofern solche eingesetzt werden. Tracking- oder Marketing-Cookies werden nicht verwendet."
+            }
+          ]
+        },
+        {
+          "heading": "5. Kontaktaufnahme",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Wenn Sie mich per E-Mail oder Telefon kontaktieren, werden Ihre Angaben zur Bearbeitung der Anfrage gespeichert. Eine Weitergabe an Dritte erfolgt nicht ohne Ihre ausdrückliche Zustimmung."
+            }
+          ]
+        },
+        {
+          "heading": "6. Weitergabe von Daten",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Eine Übermittlung personenbezogener Daten an Dritte findet nur statt, wenn dies gesetzlich erlaubt ist oder Sie ausdrücklich eingewilligt haben."
+            }
+          ]
+        },
+        {
+          "heading": "7. Ihre Rechte",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Sie haben jederzeit das Recht auf:"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Auskunft über Ihre gespeicherten Daten",
+                "Berichtigung unrichtiger Daten",
+                "Löschung Ihrer Daten",
+                "Einschränkung der Verarbeitung",
+                "Widerspruch gegen die Verarbeitung",
+                "Datenübertragbarkeit"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "Hierzu können Sie sich jederzeit an die oben genannte verantwortliche Stelle wenden."
+            }
+          ]
+        },
+        {
+          "heading": "8. Aktualität und Änderung dieser Datenschutzerklärung",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Ich behalte mir vor, diese Datenschutzerklärung bei Bedarf anzupassen, um sie an aktuelle rechtliche Anforderungen oder Änderungen meiner Leistungen anzupassen."
+            }
+          ]
+        }
+      ]
+    },
+    "en": {
+      "page_title": "Gaowa Consulting | Privacy Policy",
+      "heading": "Privacy Policy",
+      "subtitle": "Updated: June 2026",
+      "sections": [
+        {
+          "heading": "1. Controller",
+          "blocks": [
+            {
+              "type": "address",
+              "lines": [
+                "Aodun Gaowa",
+                "Alexander-Pachmann-Str. 4d",
+                "Bavaria, Germany",
+                "Email: a.gaowa@gaowa-consulting.de"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "2. Collection and processing of personal data",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Personal data is collected on this website only if you provide it voluntarily, for example by contacting me by email or phone. Processing is carried out exclusively to handle your inquiry or to fulfill contractual obligations."
+            }
+          ]
+        },
+        {
+          "heading": "3. Server log files",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "The website provider automatically collects and stores information in server log files that your browser transmits automatically."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Browser type and browser version",
+                "Operating system used",
+                "Referrer URL",
+                "Hostname of the accessing computer",
+                "Time of the server request"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "This data cannot be assigned to specific persons and is used exclusively for technical security and optimization of the website."
+            }
+          ]
+        },
+        {
+          "heading": "4. Cookies",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "This website uses only technically necessary cookies, if any are used. Tracking or marketing cookies are not used."
+            }
+          ]
+        },
+        {
+          "heading": "5. Contact",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "If you contact me by email or phone, your details will be stored to process the inquiry. Data will not be passed on to third parties without your explicit consent."
+            }
+          ]
+        },
+        {
+          "heading": "6. Data transfer",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Personal data is transferred to third parties only where legally permitted or where you have expressly consented."
+            }
+          ]
+        },
+        {
+          "heading": "7. Your rights",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "You have the right at any time to:"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Access your stored data",
+                "Correct inaccurate data",
+                "Delete your data",
+                "Restrict processing",
+                "Object to processing",
+                "Data portability"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "You may contact the controller named above at any time to exercise these rights."
+            }
+          ]
+        },
+        {
+          "heading": "8. Updates to this privacy policy",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "I reserve the right to update this privacy policy when necessary to reflect current legal requirements or changes to my services."
+            }
+          ]
+        }
+      ]
+    },
+    "zh": {
+      "page_title": "Gaowa Consulting | 隐私声明",
+      "heading": "隐私声明",
+      "subtitle": "更新：2026年6月",
+      "sections": [
+        {
+          "heading": "1. 负责人",
+          "blocks": [
+            {
+              "type": "address",
+              "lines": [
+                "Aodun Gaowa",
+                "Alexander-Pachmann-Str. 4d",
+                "德国巴伐利亚州",
+                "邮箱：a.gaowa@gaowa-consulting.de"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "2. 个人数据的收集与处理",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "本网站仅在您自愿提供时收集个人数据，例如通过电子邮件或电话联系。数据处理仅用于处理您的咨询或履行合同义务。"
+            }
+          ]
+        },
+        {
+          "heading": "3. 服务器日志文件",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "网站服务提供商会自动收集并存储浏览器自动传输的服务器日志信息。"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "浏览器类型和版本",
+                "使用的操作系统",
+                "来源网址",
+                "访问设备的主机名",
+                "服务器请求时间"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "这些数据无法对应到特定个人，仅用于网站技术安全和优化。"
+            }
+          ]
+        },
+        {
+          "heading": "4. Cookie",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "本网站仅在必要时使用技术必需的 Cookie。不使用跟踪或营销 Cookie。"
+            }
+          ]
+        },
+        {
+          "heading": "5. 联系",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "如果您通过电子邮件或电话联系我，您的信息将被保存以便处理咨询。未经您明确同意，不会将数据传递给第三方。"
+            }
+          ]
+        },
+        {
+          "heading": "6. 数据转发",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "仅在法律允许或您明确同意的情况下，个人数据才会转交给第三方。"
+            }
+          ]
+        },
+        {
+          "heading": "7. 您的权利",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "您随时享有以下权利："
+            },
+            {
+              "type": "ul",
+              "items": [
+                "查询已保存的数据",
+                "更正不准确的数据",
+                "删除您的数据",
+                "限制处理",
+                "反对处理",
+                "数据可携带权"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "您可随时联系上述负责人行使相关权利。"
+            }
+          ]
+        },
+        {
+          "heading": "8. 隐私声明的更新",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "我保留在必要时调整本隐私声明的权利，以符合当前法律要求或服务变化。"
+            }
+          ]
+        }
+      ]
+    }
   },
   "impressum": {
-    "page_title": "Gaowa Consulting | Impressum",
-    "heading": "Impressum",
-    "subtitle": "Angaben gemäß § 5 TMG",
-    "sections": [
-      {
-        "heading": "Anbieter",
-        "address": [
-          "Aodun Gaowa",
-          "Alexander-Pachmann-Str. 4d",
-          "Bayern, Deutschland"
-        ]
-      },
-      {
-        "heading": "Kontakt",
-        "address": [
-          "Telefon: +49 152 3390 3259",
-          "E-Mail: a.gaowa@gaowa-consulting.de",
-          "Website: www.gaowa-consulting.de"
-        ]
-      },
-      {
-        "heading": "Umsatzsteuer-ID",
-        "address": [
-          "USt-ID gem. § 27a UStG: DE462770730"
-        ]
-      },
-      {
-        "heading": "Haftungsausschluss",
-        "paragraphs": [
-          "Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte wird jedoch keine Gewähr übernommen. Als Diensteanbieterin bin ich gemäß § 7 DDG für eigene Inhalte auf diesen Seiten verantwortlich. Nach §§ 8 bis 10 DDG bin ich jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen."
-        ]
-      },
-      {
-        "heading": "Urheberrecht",
-        "paragraphs": [
-          "Alle Inhalte dieser Website unterliegen dem deutschen Urheberrecht. Jede Art der Vervielfältigung, Bearbeitung, Verbreitung oder sonstigen Nutzung außerhalb der Grenzen des Urheberrechts bedarf der vorherigen schriftlichen Zustimmung der Inhaberin. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet."
-        ]
-      }
-    ]
+    "de": {
+      "page_title": "Gaowa Consulting | Impressum",
+      "heading": "Impressum",
+      "subtitle": "Angaben gemäß § 5 TMG",
+      "sections": [
+        {
+          "heading": "Anbieter",
+          "address": [
+            "Aodun Gaowa",
+            "Alexander-Pachmann-Str. 4d",
+            "Bayern, Deutschland"
+          ]
+        },
+        {
+          "heading": "Kontakt",
+          "address": [
+            "Telefon: +49 152 3390 3259",
+            "E-Mail: a.gaowa@gaowa-consulting.de",
+            "Website: www.gaowa-consulting.de"
+          ]
+        },
+        {
+          "heading": "Umsatzsteuer-ID",
+          "address": [
+            "USt-ID gem. § 27a UStG: DE462770730"
+          ]
+        },
+        {
+          "heading": "Haftungsausschluss",
+          "paragraphs": [
+            "Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte wird jedoch keine Gewähr übernommen. Als Diensteanbieterin bin ich gemäß § 7 DDG für eigene Inhalte auf diesen Seiten verantwortlich. Nach §§ 8 bis 10 DDG bin ich jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen."
+          ]
+        },
+        {
+          "heading": "Urheberrecht",
+          "paragraphs": [
+            "Alle Inhalte dieser Website unterliegen dem deutschen Urheberrecht. Jede Art der Vervielfältigung, Bearbeitung, Verbreitung oder sonstigen Nutzung außerhalb der Grenzen des Urheberrechts bedarf der vorherigen schriftlichen Zustimmung der Inhaberin. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet."
+          ]
+        }
+      ]
+    },
+    "en": {
+      "page_title": "Gaowa Consulting | Imprint",
+      "heading": "Imprint",
+      "subtitle": "Information according to § 5 TMG",
+      "sections": [
+        {
+          "heading": "Provider",
+          "address": [
+            "Aodun Gaowa",
+            "Alexander-Pachmann-Str. 4d",
+            "Bavaria, Germany"
+          ]
+        },
+        {
+          "heading": "Contact",
+          "address": [
+            "Phone: +49 152 3390 3259",
+            "Email: a.gaowa@gaowa-consulting.de",
+            "Website: www.gaowa-consulting.de"
+          ]
+        },
+        {
+          "heading": "VAT ID",
+          "address": [
+            "VAT ID according to § 27a UStG: DE462770730"
+          ]
+        },
+        {
+          "heading": "Disclaimer",
+          "paragraphs": [
+            "The contents of this website were created with the greatest care. However, no guarantee is given for the accuracy, completeness or timeliness of the content. As a service provider, I am responsible for my own content on these pages in accordance with § 7 DDG. According to §§ 8–10 DDG, I am not obliged to monitor transmitted or stored third-party information or to investigate circumstances indicating illegal activity."
+          ]
+        },
+        {
+          "heading": "Copyright",
+          "paragraphs": [
+            "All content on this website is subject to German copyright law. Any reproduction, editing, distribution or use outside the limits of copyright requires prior written permission. Downloads and copies of this site are permitted only for private, non-commercial use."
+          ]
+        }
+      ]
+    },
+    "zh": {
+      "page_title": "Gaowa Consulting | 版权与免责声明",
+      "heading": "版权与免责声明",
+      "subtitle": "依据德国法律的信息披露",
+      "sections": [
+        {
+          "heading": "提供者",
+          "address": [
+            "Aodun Gaowa",
+            "Alexander-Pachmann-Str. 4d",
+            "德国巴伐利亚州"
+          ]
+        },
+        {
+          "heading": "联系方式",
+          "address": [
+            "电话：+49 152 3390 3259",
+            "邮箱：a.gaowa@gaowa-consulting.de",
+            "网站：www.gaowa-consulting.de"
+          ]
+        },
+        {
+          "heading": "增值税号",
+          "address": [
+            "增值税号（§27a UStG）：DE462770730"
+          ]
+        },
+        {
+          "heading": "免责声明",
+          "paragraphs": [
+            "本网站内容经过认真编写，但不保证其准确性、完整性或时效性。作为服务提供者，我根据德国《数字服务法》(DDG) 第7条对本站自有内容负责。但根据DDG第8–10条，我无义务监控第三方传输或存储的信息，也无义务调查可能表明违法行为的情况。"
+          ]
+        },
+        {
+          "heading": "版权声明",
+          "paragraphs": [
+            "本网站所有内容受德国版权法保护。未经书面许可，不得复制、编辑、传播或用于版权法允许范围之外的用途。仅允许私人、非商业用途的下载和复制。"
+          ]
+        }
+      ]
+    }
   },
   "about": {
     "page_titles": {

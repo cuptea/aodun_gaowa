@@ -1,9 +1,20 @@
-{% assign page_content = site.data.content.angebote %}
+{% assign lang = page.lang | default: 'de' %}
+{% assign page_content = site.data.content.angebote[lang] | default: site.data.content.angebote.de %}
+{% assign page_switcher = site.data.content.language_switcher.angebote %}
+
+<div class="fixed top-14 right-0 p-4 md:p-8 z-40 flex gap-2">
+    {% for switch in page_switcher %}
+    <a href="{{ switch.url | relative_url }}"
+       class="px-3 py-1 text-xs font-mono uppercase tracking-widest {% if lang == switch.code %}bg-[#1A1A1A] text-white{% else %}opacity-40 hover:opacity-60{% endif %} rounded transition">
+        {{ switch.label }}
+    </a>
+    {% endfor %}
+</div>
 
 <div class="max-w-4xl mx-auto px-8 py-16 md:py-24">
 
     <header class="mb-24">
-        <h1 class="text-5xl md:text-6xl font-serif tracking-tighter mb-6 text-[#1A1A1A]">
+        <h1 class="text-4xl md:text-5xl font-serif tracking-tighter mb-6 text-[#1A1A1A]">
             {{ page_content.heading }}
         </h1>
 
