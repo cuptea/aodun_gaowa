@@ -9,9 +9,13 @@
         </h1>
 
         <p class="text-xl md:text-2xl font-light leading-snug max-w-2xl opacity-80">
+            {% if page_content.hero.tagline %}
+            {{ page_content.hero.tagline }}
+            {% else %}
             {{ page_content.hero.tagline_before }}
             <span class="font-serif italic">{{ page_content.hero.tagline_emphasis[0] }}</span> und
             <span class="font-serif italic">{{ page_content.hero.tagline_emphasis[1] }}</span>{{ page_content.hero.tagline_after }}
+            {% endif %}
         </p>
     </header>
 
