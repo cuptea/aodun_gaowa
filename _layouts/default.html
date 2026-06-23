@@ -7,7 +7,9 @@
         {%- if page.page_key == 'about' -%}
             {{ site.data.content.about.page_titles[page.lang] | default: site.title }}
         {%- elsif page.page_key -%}
-            {{ site.data.content[page.page_key].page_title | default: site.title }}
+            {%- assign title_lang = page.lang | default: 'de' -%}
+            {%- assign title_content = site.data.content[page.page_key][title_lang] | default: site.data.content[page.page_key].de -%}
+            {{ title_content.page_title | default: site.title }}
         {%- else -%}
             {{ page.title | default: site.title }}
         {%- endif -%}
