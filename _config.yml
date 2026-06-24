@@ -1,8 +1,8 @@
 title: Gaowa Consulting
 email: a.gaowa@gaowa-consulting.de
 description: Deutsch-chinesische Lieferketten, Sourcing und Business Development mit Gaowa Consulting.
-baseurl: "" # custom domain is configured via CNAME
-url: "https://gaowa-consulting.de" # the base hostname & protocol for your site
+baseurl: "/aodun_gaowa" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 github_username: 
 
