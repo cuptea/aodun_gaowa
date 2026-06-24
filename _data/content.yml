@@ -8,7 +8,7 @@
       },
       {
         "id": "angebote",
-        "label": "Angebote",
+        "label": "Leistungen",
         "url": "/angebote.html"
       },
       {
@@ -195,7 +195,7 @@
         "text": "Kontakt: a.gaowa@gaowa-consulting.de · +49 152 3390 3259",
         "buttons": [
           {
-            "label": "Angebote ansehen",
+            "label": "Leistungen ansehen",
             "url": "/angebote.html",
             "style": "primary"
           },
@@ -313,10 +313,10 @@
         {
           "heading": "Unternehmensberatung (DE–CN Business Development)",
           "items": [
-            "Strategie: Markt- und Wettbewerbsanalysen; Markteintrittsstrategien; Bewertung technischer Anforderungen",
-            "Technische Klärung: Schnittstellenklärung DE/CN; Analyse von Spezifikationen; Vorbereitung technischer Entscheidungen",
-            "Projektmanagement: Internationale Beschaffungs- und Entwicklungsprojekte; Termin- und Meilensteinsteuerung; Risikomanagement",
-            "Interkulturelle Unterstützung: Verhandlungsbegleitung (DE/CN); Moderation technischer und kaufmännischer Teams; Begleitung von Industrialisierungs- und Qualitätsprozessen"
+            "Strategie: Markt- und Wettbewerbsanalysen, Markteintrittsstrategien, Bewertung technischer Anforderungen",
+            "Technische Klärung: Schnittstellenklärung DE/CN, Analyse von Spezifikationen, Vorbereitung technischer Entscheidungen",
+            "Projektmanagement: Internationale Beschaffungs- und Entwicklungsprojekte, Termin- und Meilensteinsteuerung, Risikomanagement",
+            "Interkulturelle Unterstützung: Verhandlungsbegleitung (DE/CN), Moderation technischer und kaufmännischer Teams, Begleitung von Industrialisierungs- und Qualitätsprozessen"
           ]
         },
         {
@@ -353,10 +353,10 @@
         {
           "heading": "Consulting (DE–CN Business Development)",
           "items": [
-            "Strategy: market and competition analyses; market entry strategies; evaluation of technical requirements.",
-            "Technical clarification: DE/CN interface clarification; specification analysis; preparation of technical decisions.",
-            "Project management: international procurement and development projects; timeline and milestone management; risk management.",
-            "Intercultural support: negotiation support (DE/CN); moderation of technical and commercial teams; support in industrialization and quality processes."
+            "Strategy: market and competition analyses, market entry strategies, evaluation of technical requirements.",
+            "Technical clarification: DE/CN interface clarification, specification analysis, preparation of technical decisions.",
+            "Project management: international procurement and development projects, timeline and milestone management, risk management.",
+            "Intercultural support: negotiation support (DE/CN), moderation of technical and commercial teams, support in industrialization and quality processes."
           ]
         },
         {
