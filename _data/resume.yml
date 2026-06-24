@@ -1,158 +1,221 @@
-name: "Aodun Gaowa"
-
-languages:
-  en:
-    role: "Business Development Manager"
-    hero:
-      before: "A strategic leader in"
-      highlight: "Business Development"
-      after: "specializing in China-Germany partnerships"
-    performance_keywords: "China & Germany · Procurement · Market Entry · Industry"
-    contact:
-      location: "Munich, Bavaria, Germany"
-      born: "Inner Mongolia, China"
-      nationality: "German"
-      status: "Married, 1 child"
-      email: "a.gaowa@gp-iconsulting.de"
-      phone: "+49 (0)152 3390 3259"
-    ui:
-      profile_core: "Profile Core"
-      essentials: "Essentials"
-      born: "Born"
-      nationality: "Nationality"
-      status: "Status"
-      connect: "Connect"
-      current_role: "Current Position"
-      service_scope: "Service Scope"
-      performance_profile: "Performance Profile"
-      professional_lineup: "Professional Experience"
-      education_paths: "Education Paths"
-      tagline: "Bridging industrial manufacturing and strategic procurement networks between Germany and China."
-      market_development: "Market Development"
-      market_development_desc: "Formulating localized entry strategies, identifying industrial growth drivers, and establishing sustainable cross-border frameworks."
-      customer_acquisition: "Customer Acquisition"
-      customer_acquisition_desc: "Targeting high-value accounts, navigating complex corporate hierarchies, and securing technical supply chain partnerships."
-      business_initiation: "Business Initiation"
-      business_initiation_desc: "Managing full-cycle contract negotiations, aligning expectations across diverse cultural landscapes, and legal frameworks."
-      industry_focus: "Industry Focus"
-      industry_focus_desc: "Specializing in industrial consulting, raw material sourcing, supply chain optimizations, and corporate match-making."
-    experience:
-      - period: "2024 - Present"
-        company: "GP-I Consulting GmbH"
-        location: "Germany"
-        role: "Business Development Manager"
-        tasks:
-          - "Leading cross-border business development strategies for German-Chinese industrial partnerships."
-          - "Managing procurement pipelines, supplier audits, and strategic sourcing initiatives for corporate clients."
-          - "Advising European enterprises on regulatory compliance, localization, and market-entry roadmaps for East Asian markets."
-    education:
-      - period: "Graduated"
-        degree: "Master of Business Administration (MBA)"
-        school: "Focus on International Business & Strategy"
-      - period: "Undergraduate"
-        degree: "Bachelor of Arts"
-        school: "Intercultural Management & Linguistics"
-
-  de:
-    role: "Business Development Manager"
-    hero:
-      before: "Ein strategischer Führungskopf im"
-      highlight: "Business Development"
-      after: "mit Spezialgebiet China-Deutschland Partnerschaften"
-    performance_keywords: "China & Deutschland · Beschaffung · Markteintritt · Industrie"
-    contact:
-      location: "München, Bayern, Deutschland"
-      born: "Innere Mongolei, China"
-      nationality: "Deutsch"
-      status: "Verheiratet, 1 Kind"
-      email: "a.gaowa@gp-iconsulting.de"
-      phone: "+49 (0)152 3390 3259"
-    ui:
-      profile_core: "Profil-Kern"
-      essentials: "Stammdaten"
-      born: "Geburtsort"
-      nationality: "Nationalität"
-      status: "Familienstand"
-      connect: "Kontakt"
-      current_role: "Aktuelle Position"
-      service_scope: "Dienstleistungsspektrum"
-      performance_profile: "Leistungsprofil"
-      professional_lineup: "Beruflicher Werdegang"
-      education_paths: "Bildungsweg"
-      tagline: "Die Brücke für industrielle Fertigung und strategische Beschaffungsnetzwerke zwischen Deutschland und China."
-      market_development: "Marktentwicklung"
-      market_development_desc: "Formulierung lokalisierter Eintrittsstrategien, Identifizierung industrieller Wachstumstreiber und Etablierung nachhaltiger grenzüberschreitender Strukturen."
-      customer_acquisition: "Kundenakquisition"
-      customer_acquisition_desc: "Zielgerichtete Ansprache von Großkunden, Navigation durch komplexe Unternehmenshierarchien und Absicherung technischer Lieferketten-Partnerschaften."
-      business_initiation: "Anbahnung & Verhandlung"
-      business_initiation_desc: "Steuerung des gesamten Vertragsverhandlungszyklus sowie Harmonisierung von Erwartungen über unterschiedliche Kultur- und Rechtsräume hinweg."
-      industry_focus: "Branchenschwerpunkt"
-      industry_focus_desc: "Spezialisiert auf Industrieberatung, Rohstoffbeschaffung, Lieferkettenoptimierung und B2B-Unternehmens-Matching."
-    experience:
-      - period: "2024 - Gegenwart"
-        company: "GP-I Consulting GmbH"
-        location: "Deutschland"
-        role: "Business Development Manager"
-        tasks:
-          - "Leitung grenzüberschreitender Geschäftsentwicklungsstrategien für deutsch-chinesische Industriepartnerschaften."
-          - "Steuerung von Beschaffungsprozessen, Lieferanten-Audits und strategischen Sourcing-Initiativen für Unternehmenskunden."
-          - "Beratung europäischer Unternehmen zu regulatorischer Compliance, Lokalisierung und Markteintritts-Roadmaps in Ostasien."
-    education:
-      - period: "Abschluss"
-        degree: "Master of Business Administration (MBA)"
-        school: "Schwerpunkt auf Internationale Geschäftsstrategie"
-      - period: "Studium"
-        degree: "Bachelor of Arts"
-        school: "Interkulturelles Management & Linguistik"
-
-  zh:
-    role: "商业发展经理 test"
-    hero:
-      before: "一位"
-      highlight: "商业发展"
-      after: "领域的战略领袖，专门从事中德合作"
-    performance_keywords: "中国和德国 · 采购 · 市场进入 · 工业"
-    contact:
-      location: "德国巴伐利亚州慕尼黑"
-      born: "中国内蒙古"
-      nationality: "德国国籍"
-      status: "已婚，育有1子"
-      email: "a.gaowa@gp-iconsulting.de"
-      phone: "+49 (0)152 3390 3259"
-    ui:
-      profile_core: "核心档案"
-      essentials: "基本信息"
-      born: "出生地"
-      nationality: "国籍"
-      status: "家庭状况"
-      connect: "联系方式"
-      current_role: "当前职位"
-      service_scope: "业务范围"
-      performance_profile: "履历概要"
-      professional_lineup: "职业生涯"
-      education_paths: "教育背景"
-      tagline: "搭建德中之间工业制造与战略采购网络的合作桥梁。"
-      market_development: "市场开发"
-      market_development_desc: "制定本地化准入战略，识别工业增长驱动力，并建立可持续的跨境合作框架。"
-      customer_acquisition: "客户拓展"
-      customer_acquisition_desc: "锁定高价值客户，应对复杂的企业组织架构，并确保技术供应链合作伙伴关系稳定。"
-      business_initiation: "业务促成与谈判"
-      business_initiation_desc: "管理全周期合同谈判，跨越多元文化背景与法律框架理顺各方预期。"
-      industry_focus: "行业聚焦"
-      industry_focus_desc: "专注于工业咨询、原材料采购、供应链优化以及企业间的高端商务撮合。"
-    experience:
-      - period: "2024 至今"
-        company: "GP-I Consulting GmbH"
-        location: "德国"
-        role: "商业发展经理"
-        tasks:
-          - "主导德中工业伙伴关系的跨境商业拓展战略。"
-          - "为企业客户管理采购渠道、供应商审计和战略寻源计划。"
-          - "就东亚市场的合规性、本地化和市场准入路线图为欧洲企业提供咨询服务。"
-    education:
-      - period: "毕业"
-        degree: "工商管理硕士 (MBA)"
-        school: "主修国际商业与企业战略"
-      - period: "本科"
-        degree: "文学学士"
-        school: "跨文化管理与语言学"
+{
+  "name": "Aodun Gaowa",
+  "languages": {
+    "en": {
+      "role": "Multilingual Expert for German-Chinese Industrial Projects",
+      "hero": {
+        "before": "A multilingual expert for",
+        "highlight": "German-Chinese industrial projects",
+        "after": "with 15+ years in automotive and manufacturing"
+      },
+      "performance_keywords": "German-Chinese industry · Systems Engineering · Automotive · Sourcing · Industrialization",
+      "contact": {
+        "location": "Munich, Bavaria, Germany",
+        "born": "Inner Mongolia, China",
+        "nationality": "German",
+        "status": "Married, 1 child",
+        "email": "a.gaowa@gaowa-consulting.de",
+        "phone": "+49 152 3390 3259"
+      },
+      "ui": {
+        "profile_core": "Profile Core",
+        "essentials": "Essentials",
+        "born": "Born",
+        "nationality": "Nationality",
+        "status": "Status",
+        "connect": "Contact",
+        "current_role": "Current Focus",
+        "service_scope": "Experience & Expertise",
+        "performance_profile": "Profile",
+        "professional_lineup": "Professional Background",
+        "education_paths": "Mission",
+        "tagline": "My mission is to help companies implement international projects efficiently, transparently and successfully – with a focus on technical clarity, cultural alignment and sustainable partnerships in the German-Chinese business environment.",
+        "market_development": "Technical & Economic Feasibility",
+        "market_development_desc": "Analysis and evaluation of technical and economic feasibility for international industrial projects.",
+        "customer_acquisition": "Supplier & Customer Relationships",
+        "customer_acquisition_desc": "Building sustainable customer and supplier relationships in Germany and China.",
+        "business_initiation": "DE–CN Business Development",
+        "business_initiation_desc": "Development and implementation of business development strategies in the German-Chinese context.",
+        "industry_focus": "International Project Delivery",
+        "industry_focus_desc": "Coordination of international suppliers and support of tooling, equipment, development and industrialization projects."
+      },
+      "experience": [
+        {
+          "period": "Automotive Tier 1",
+          "company": "Minth Group",
+          "location": "International",
+          "role": "Technical Interface & Industrialization Lead",
+          "tasks": [
+            "Technical interface responsibility to OEM customers.",
+            "Supplier management in international projects.",
+            "Management of key industrialization processes, including an anodizing line.",
+            "Project lead for a €24 million production line with laser and FSW welding systems."
+          ]
+        },
+        {
+          "period": "5 Series / 7 Series / Rolls-Royce",
+          "company": "BMW Group",
+          "location": "Germany",
+          "role": "Assembly Project Management",
+          "tasks": [
+            "Operational project management for assembly processes.",
+            "Support of complex production and industrialization projects.",
+            "Coordination of cross-functional teams.",
+            "Alignment of technical and organizational interfaces."
+          ]
+        }
+      ],
+      "education": [
+        {
+          "period": "Mission",
+          "degree": "Technical clarity, cultural alignment and sustainable partnerships",
+          "school": "Efficient, transparent and successful implementation of international projects."
+        }
+      ]
+    },
+    "de": {
+      "role": "Expertin für deutsch-chinesische Industrieprojekte",
+      "hero": {
+        "before": "Viersprachige Expertin für",
+        "highlight": "deutsch-chinesische Industrieprojekte",
+        "after": "mit über 15 Jahren Erfahrung in Automobil- und Fertigungsindustrie"
+      },
+      "performance_keywords": "Deutsch-chinesische Industrie · Systems Engineering · Automotive · Sourcing · Industrialisierung",
+      "contact": {
+        "location": "Munich, Bayern, Deutschland",
+        "born": "Innere Mongolei, China",
+        "nationality": "Deutsch",
+        "status": "Verheiratet, 1 Kind",
+        "email": "a.gaowa@gaowa-consulting.de",
+        "phone": "+49 152 3390 3259"
+      },
+      "ui": {
+        "profile_core": "Profil-Kern",
+        "essentials": "Stammdaten",
+        "born": "Geburtsort",
+        "nationality": "Nationalität",
+        "status": "Familienstand",
+        "connect": "Kontakt",
+        "current_role": "Aktueller Fokus",
+        "service_scope": "Erfahrung & Expertise",
+        "performance_profile": "Profil",
+        "professional_lineup": "Beruflicher Werdegang",
+        "education_paths": "Mission",
+        "tagline": "Ziel meiner Arbeit ist es, Unternehmen dabei zu unterstützen, internationale Projekte effizient, transparent und erfolgreich umzusetzen – mit Fokus auf technische Klarheit, kulturelle Sicherheit und nachhaltige Partnerschaften im deutsch-chinesischen Wirtschaftsraum.",
+        "market_development": "Technische & wirtschaftliche Machbarkeit",
+        "market_development_desc": "Analyse und Bewertung technischer und wirtschaftlicher Machbarkeit internationaler Industrieprojekte.",
+        "customer_acquisition": "Kunden- & Lieferantenbeziehungen",
+        "customer_acquisition_desc": "Aufbau nachhaltiger Kunden- und Lieferantenbeziehungen in Deutschland und China.",
+        "business_initiation": "DE–CN Business Development",
+        "business_initiation_desc": "Entwicklung und Umsetzung von Business-Development-Strategien im DE–CN-Kontext.",
+        "industry_focus": "Internationale Projektsteuerung",
+        "industry_focus_desc": "Koordination internationaler Lieferanten sowie Begleitung von Werkzeug-, Anlagen-, Entwicklungs- und Industrialisierungsprojekten."
+      },
+      "experience": [
+        {
+          "period": "Automotive Tier 1",
+          "company": "Minth Group",
+          "location": "International",
+          "role": "Technische Schnittstelle & Industrialisierung",
+          "tasks": [
+            "Verantwortung der technischen Schnittstelle zu OEM-Kunden.",
+            "Steuerung des Lieferantenmanagements in internationalen Projekten.",
+            "Leitung zentraler Industrialisierungsprozesse, einschließlich Eloxal-Linie.",
+            "Projektleitung einer 24-Mio.-Euro-Fertigungslinie mit Laser- und FSW-Schweißanlagen."
+          ]
+        },
+        {
+          "period": "5er / 7er / Rolls-Royce",
+          "company": "BMW Group",
+          "location": "Deutschland",
+          "role": "Projektsteuerung Montage",
+          "tasks": [
+            "Betriebliche Projektsteuerung für Montageprozesse.",
+            "Begleitung komplexer Produktions- und Industrialisierungsprojekte.",
+            "Koordination funktionsübergreifender Teams.",
+            "Abstimmung technischer und organisatorischer Schnittstellen."
+          ]
+        }
+      ],
+      "education": [
+        {
+          "period": "Mission",
+          "degree": "Technische Klarheit, kulturelle Sicherheit und nachhaltige Partnerschaften",
+          "school": "Effiziente, transparente und erfolgreiche Umsetzung internationaler Projekte."
+        }
+      ]
+    },
+    "zh": {
+      "role": "德中工业项目专家",
+      "hero": {
+        "before": "一名精通四种语言的",
+        "highlight": "德中工业项目专家",
+        "after": "拥有超过15年的汽车与制造业经验"
+      },
+      "performance_keywords": "德中工业 · 系统工程 · 汽车行业 · 采购寻源 · 工业化",
+      "contact": {
+        "location": "德国巴伐利亚州慕尼黑",
+        "born": "中国内蒙古",
+        "nationality": "德国国籍",
+        "status": "已婚，育有1子",
+        "email": "a.gaowa@gaowa-consulting.de",
+        "phone": "+49 152 3390 3259"
+      },
+      "ui": {
+        "profile_core": "核心档案",
+        "essentials": "基本信息",
+        "born": "出生地",
+        "nationality": "国籍",
+        "status": "家庭状况",
+        "connect": "联系方式",
+        "current_role": "当前重点",
+        "service_scope": "经验与专长",
+        "performance_profile": "履历概要",
+        "professional_lineup": "职业经历",
+        "education_paths": "使命",
+        "tagline": "我的使命是帮助企业高效、透明、成功地实施国际项目——重点关注技术清晰度、文化契合度以及德中之间的可持续合作关系。",
+        "market_development": "技术与经济可行性",
+        "market_development_desc": "分析并评估国际工业项目的技术与经济可行性。",
+        "customer_acquisition": "客户与供应商关系",
+        "customer_acquisition_desc": "建立德国与中国之间长期、可持续的客户和供应商关系。",
+        "business_initiation": "德中商务发展",
+        "business_initiation_desc": "制定并实施德中商务发展战略。",
+        "industry_focus": "国际项目推进",
+        "industry_focus_desc": "协调国际供应商，支持工装、设备、复杂开发与工业化项目。"
+      },
+      "experience": [
+        {
+          "period": "汽车一级供应商",
+          "company": "敏实集团",
+          "location": "国际项目",
+          "role": "技术接口与工业化负责人",
+          "tasks": [
+            "负责与整车厂的技术接口。",
+            "国际项目的供应商管理。",
+            "负责核心工业化流程，包括阳极氧化生产线。",
+            "负责价值2400万欧元的激光与FSW焊接生产线项目。"
+          ]
+        },
+        {
+          "period": "5系 / 7系 / 劳斯莱斯",
+          "company": "宝马集团",
+          "location": "德国",
+          "role": "装配项目管理",
+          "tasks": [
+            "装配流程的项目管理。",
+            "支持复杂的生产与工业化项目。",
+            "跨部门团队协调。",
+            "技术与组织接口管理。"
+          ]
+        }
+      ],
+      "education": [
+        {
+          "period": "使命",
+          "degree": "技术清晰度、文化契合度与可持续合作关系",
+          "school": "高效、透明、成功地实施国际项目。"
+        }
+      ]
+    }
+  }
+}

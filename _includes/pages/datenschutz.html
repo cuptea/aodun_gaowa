@@ -1,4 +1,15 @@
-{% assign page_content = site.data.content.datenschutz %}
+{% assign lang = page.lang | default: 'de' %}
+{% assign page_content = site.data.content.datenschutz[lang] | default: site.data.content.datenschutz.de %}
+{% assign page_switcher = site.data.content.language_switcher.datenschutz %}
+
+<div class="fixed top-14 right-0 p-4 md:p-8 z-40 flex gap-2">
+    {% for switch in page_switcher %}
+    <a href="{{ switch.url | relative_url }}"
+       class="px-3 py-1 text-xs font-mono uppercase tracking-widest {% if lang == switch.code %}bg-[#1A1A1A] text-white{% else %}opacity-40 hover:opacity-60{% endif %} rounded transition">
+        {{ switch.label }}
+    </a>
+    {% endfor %}
+</div>
 
 <div class="max-w-3xl mx-auto px-8 py-16 md:py-24 text-[#1A1A1A]">
 

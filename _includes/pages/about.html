@@ -44,26 +44,7 @@
                         </p>
                     </section>
 
-                    <section>
-                        <h4 class="text-[10px] uppercase tracking-[0.2em] font-bold opacity-40 mb-3">
-                            {{ lang_content.ui.essentials }}
-                        </h4>
 
-                        <ul class="space-y-3 font-mono text-[11px]">
-                            <li class="flex justify-between">
-                                <span>{{ lang_content.ui.born }}</span>
-                                <span class="opacity-50 italic">{{ lang_content.contact.born }}</span>
-                            </li>
-                            <li class="flex justify-between">
-                                <span>{{ lang_content.ui.nationality }}</span>
-                                <span class="opacity-50 italic">{{ lang_content.contact.nationality }}</span>
-                            </li>
-                            <li class="flex justify-between">
-                                <span>{{ lang_content.ui.status }}</span>
-                                <span class="opacity-50 italic">{{ lang_content.contact.status }}</span>
-                            </li>
-                        </ul>
-                    </section>
 
                     <section>
                         <h4 class="text-[10px] uppercase tracking-[0.2em] font-bold opacity-40 mb-3">
@@ -83,12 +64,7 @@
                 </div>
             </div>
 
-            <div class="p-6 bg-[#1A1A1A] rounded-2xl text-white">
-                <p class="text-[10px] uppercase tracking-widest font-bold mb-2 opacity-50">
-                    {{ lang_content.ui.current_role }}
-                </p>
-                <p class="text-xs font-mono">{{ lang_content.role }}</p>
-            </div>
+
 
         </div>
     </aside>
@@ -96,15 +72,15 @@
     <main class="flex-1 p-8 md:p-20 lg:p-24">
 
         <header class="max-w-3xl mb-32">
-            <h1 class="text-[80px] md:text-[130px] leading-[0.8] font-serif tracking-tighter mb-8 text-[#1A1A1A]">
-                {{ resume.name | split: ' ' | first }}
+            <h1 class="text-[80px] md:text-[130px] leading-[0.8] font-serif tracking-tighter mb-8">
+                <span class="text-[#1A1A1A]/30 font-normal">{{ resume.name | split: ' ' | first }}</span>
                 <br>
-                <span class="italic opacity-20">{{ resume.name | split: ' ' | last }}</span>
+                <span class="text-[#1A1A1A] font-bold">{{ resume.name | split: ' ' | last }}</span>
             </h1>
 
             <p class="text-2xl md:text-3xl font-light leading-snug tracking-tight max-w-xl opacity-80 text-[#1A1A1A]">
                 {{ lang_content.hero.before }}
-                <span class="font-serif italic font-medium uppercase text-lg tracking-widest bg-[#1A1A1A] text-white px-2 py-1 mx-1 rounded-sm">
+                <span class="font-semibold italic text-[#1A1A1A]">
                     {{ lang_content.hero.highlight }}
                 </span>
                 {{ lang_content.hero.after }}
@@ -114,39 +90,16 @@
         <div class="max-w-4xl space-y-40">
 
             <section>
-                {% include section-heading.html heading=lang_content.ui.service_scope %}
+                {% include section-heading.html heading=lang_content.ui.education_paths %}
 
-                <div class="mb-12">
-                    <h3 class="text-sm font-mono uppercase tracking-widest font-bold mb-6 opacity-60">
-                        {{ lang_content.ui.performance_profile }}
-                    </h3>
-
-                    <p class="text-xs font-mono opacity-50 mb-8">
-                        {{ lang_content.performance_keywords }}
-                    </p>
-
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
-                        <div class="border-l-2 border-[#1A1A1A]/20 pl-6">
-                            <h4 class="text-lg font-serif italic mb-3">{{ lang_content.ui.market_development }}</h4>
-                            <p class="text-sm opacity-70 leading-relaxed">{{ lang_content.ui.market_development_desc }}</p>
-                        </div>
-                        <div class="border-l-2 border-[#1A1A1A]/20 pl-6">
-                            <h4 class="text-lg font-serif italic mb-3">{{ lang_content.ui.customer_acquisition }}</h4>
-                            <p class="text-sm opacity-70 leading-relaxed">{{ lang_content.ui.customer_acquisition_desc }}</p>
-                        </div>
-                        <div class="border-l-2 border-[#1A1A1A]/20 pl-6">
-                            <h4 class="text-lg font-serif italic mb-3">{{ lang_content.ui.business_initiation }}</h4>
-                            <p class="text-sm opacity-70 leading-relaxed">{{ lang_content.ui.business_initiation_desc }}</p>
-                        </div>
-                        <div class="border-l-2 border-[#1A1A1A]/20 pl-6">
-                            <h4 class="text-lg font-serif italic mb-3">{{ lang_content.ui.industry_focus }}</h4>
-                            <p class="text-sm opacity-70 leading-relaxed">{{ lang_content.ui.industry_focus_desc }}</p>
-                        </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-[#1A1A1A]">
+                    {% for edu in lang_content.education %}
+                    <div class="space-y-2">
+                        <span class="font-mono text-xs opacity-30">{{ edu.period }}</span>
+                        <h4 class="text-xl font-serif italic">{{ edu.degree }}</h4>
+                        <p class="text-sm opacity-60">{{ edu.school }}</p>
                     </div>
-
-                    <div class="p-8 bg-[#1A1A1A]/5 rounded-lg border border-[#1A1A1A]/10">
-                        <p class="text-sm italic text-[#1A1A1A] leading-relaxed">{{ lang_content.ui.tagline }}</p>
-                    </div>
+                    {% endfor %}
                 </div>
             </section>
 
@@ -188,19 +141,41 @@
             </section>
 
             <section>
-                {% include section-heading.html heading=lang_content.ui.education_paths %}
+                {% include section-heading.html heading=lang_content.ui.service_scope %}
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-[#1A1A1A]">
-                    {% for edu in lang_content.education %}
-                    <div class="space-y-2">
-                        <span class="font-mono text-xs opacity-30">{{ edu.period }}</span>
-                        <h4 class="text-xl font-serif italic">{{ edu.degree }}</h4>
-                        <p class="text-sm opacity-60">{{ edu.school }}</p>
+                <div class="mb-12">
+                    <h3 class="text-sm font-mono uppercase tracking-widest font-bold mb-6 opacity-60">
+                        {{ lang_content.ui.performance_profile }}
+                    </h3>
+
+                    <p class="text-xs font-mono opacity-50 mb-8">
+                        {{ lang_content.performance_keywords }}
+                    </p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+                        <div class="border-l-2 border-[#1A1A1A]/20 pl-6">
+                            <h4 class="text-lg font-serif italic mb-3">{{ lang_content.ui.market_development }}</h4>
+                            <p class="text-sm opacity-70 leading-relaxed">{{ lang_content.ui.market_development_desc }}</p>
+                        </div>
+                        <div class="border-l-2 border-[#1A1A1A]/20 pl-6">
+                            <h4 class="text-lg font-serif italic mb-3">{{ lang_content.ui.customer_acquisition }}</h4>
+                            <p class="text-sm opacity-70 leading-relaxed">{{ lang_content.ui.customer_acquisition_desc }}</p>
+                        </div>
+                        <div class="border-l-2 border-[#1A1A1A]/20 pl-6">
+                            <h4 class="text-lg font-serif italic mb-3">{{ lang_content.ui.business_initiation }}</h4>
+                            <p class="text-sm opacity-70 leading-relaxed">{{ lang_content.ui.business_initiation_desc }}</p>
+                        </div>
+                        <div class="border-l-2 border-[#1A1A1A]/20 pl-6">
+                            <h4 class="text-lg font-serif italic mb-3">{{ lang_content.ui.industry_focus }}</h4>
+                            <p class="text-sm opacity-70 leading-relaxed">{{ lang_content.ui.industry_focus_desc }}</p>
+                        </div>
                     </div>
-                    {% endfor %}
+
+                    <div class="p-8 bg-[#1A1A1A]/5 rounded-lg border border-[#1A1A1A]/10">
+                        <p class="text-sm italic text-[#1A1A1A] leading-relaxed">{{ lang_content.ui.tagline }}</p>
+                    </div>
                 </div>
             </section>
-
             <footer class="flex flex-col md:flex-row items-center justify-between text-[10px] font-mono uppercase tracking-widest opacity-40 border-t border-[#1A1A1A]/10 pt-12 pb-12">
                 <div class="flex space-x-6 mb-4 md:mb-0">
                     <span>{{ about.footer.build }}</span>
@@ -218,8 +193,3 @@
     </main>
 </div>
 
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-    localStorage.setItem('preferredLanguage', '{{ lang }}');
-});
-</script>
